@@ -1,38 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+#container {
+  background-color: #fff;
+  padding: 1rem 0;
+  border-radius: 8px;
+  width: 480px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#form-container {
+  border-right: 1px solid gray;
+  padding: 1rem 2rem 0rem 2rem;
+}
+form {
+  margin: 1rem 0 0 0;
+}
+#heading-form {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.input-add{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0;
+  padding: 1rem;
+}
+#input-btn {
+  float: right;
+  margin: 1rem 0 0 0;
+  width: 50%;
+  padding: 6px 0;
+}
+#list-container {
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+#filter {
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 6px 0 8px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eef;
+  margin: 4px 0;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+#heading-filter {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+#total {
+  margin-top: 2rem 0 0 0;
+  float: left;
 }
