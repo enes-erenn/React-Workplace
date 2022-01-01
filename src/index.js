@@ -9,12 +9,15 @@ import {
   Route
 } from "react-router-dom";
 import Contacts from "./components/contacts/index.js"
+import ExpensesApp from "./components/expenses/ExpensesApp.js"
+
 
 render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="contacts" element={<Contacts />} />
+      <Route path="expensesapp" element={<ExpensesApp />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

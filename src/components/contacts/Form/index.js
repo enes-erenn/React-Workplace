@@ -1,47 +1,60 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-const initialFormValues = { fullName: "", phoneNumber: ""};
+const initialFormValues = { fullName: "", phoneNumber: "" };
 
-function Form({addContact, contacts}) {
-    const [form, setForm] = useState(initialFormValues);
+function Form({ addContact, contacts }) {
+  const [form, setForm] = useState(initialFormValues);
 
-    useEffect(() => {
-        setForm(initialFormValues)
-    }, [contacts]);
+  useEffect(() => {
+    setForm(initialFormValues);
+  }, [contacts]);
 
-    const onChangeInput = (e) => {
-        setForm({ ...form, [e.target.name]: e.target.value})
-    };
+  const onChangeInput = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-    const onSubmit = (e) => {
-        e.preventDefault();
-        
-        if(form.fullName === "" || form.phoneNumber === "") {
-            return false
-        };
+  const onSubmit = (e) => {
+    e.preventDefault();
 
-        addContact([...contacts, form]);
-    };
+    if (form.fullName === "" || form.phoneNumber === "") {
+      return false;
+    }
 
-    return (
-        <div id="form-container">
-            <h4 id="heading-form">Contacts</h4>
-            <form onSubmit={onSubmit}>
-                <div>
-                    <input class="input-add" name="fullName" type="text" placeholder="Full Name" onChange={onChangeInput} value={form.fullName}></input>
-                </div>
+    addContact([...contacts, form]);
+  };
 
-                <div>
-                    <input class="input-add" name="phoneNumber" type="number" placeholder="Phone Number" onChange={onChangeInput} value={form.phoneNumber}></input>
-                </div>
-
-                <div>
-                    <button id="input-btn">Add</button>
-                </div>
-            </form>
+  return (
+    <div id="form-container">
+      <h4 id="heading-form">Contacts</h4>
+      <form onSubmit={onSubmit}>
+        <div>
+          <input
+            className="input-add"
+            name="fullName"
+            type="text"
+            placeholder="Full Name"
+            onChange={onChangeInput}
+            value={form.fullName}
+          ></input>
         </div>
-        
-    )
-};
+
+        <div>
+          <input
+            className="input-add"
+            name="phoneNumber"
+            type="number"
+            placeholder="Phone Number"
+            onChange={onChangeInput}
+            value={form.phoneNumber}
+          ></input>
+        </div>
+
+        <div>
+          <button id="input-btn">Add</button>
+        </div>
+      </form>
+    </div>
+  );
+}
 
 export default Form;

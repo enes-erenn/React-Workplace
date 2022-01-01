@@ -1,9 +1,11 @@
 
 import './App.css';
 import { Link } from "react-router-dom";
-import { useState } from "react"
+import { useState } from "react";
+
 function App() {
   const [onHover, setOnHover] = useState(false)
+
   return (
     <div className="App">
       <section>
@@ -14,8 +16,8 @@ function App() {
               onMouseEnter={() => setOnHover(true)}
               onMouseLeave={() => setOnHover(false)}
               >
-              <a href="/contacts" class="headings">Contacts</a>
-              <iframe title="contacts" src="/contacts" frameborder="0" scrolling="no"></iframe>
+          
+              <iframe title="contacts" src="/contacts" scrolling="no"></iframe>
               {onHover && (
               <p>
                 See on Page
@@ -24,12 +26,26 @@ function App() {
             </div>
           </Link>
         </article>
-
+        
         <article>
-          <div className="sides">2</div>
+        <div className="sides">2</div>
         </article>
         <article>
-          <div className="sides">3</div>
+        <Link to="/expensesapp">
+              <div 
+              className="sides" 
+              onMouseEnter={() => setOnHover(true)}
+              onMouseLeave={() => setOnHover(false)}
+              >
+          
+              <iframe title="expenses" src="/expenses" scrolling="no"></iframe>
+              {onHover && (
+              <p>
+                See on Page
+              </p>
+              )}
+            </div>
+          </Link>
         </article>
         <article>
           <div className="sides">4</div>
