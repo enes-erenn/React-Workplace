@@ -5,6 +5,7 @@
   padding: 0.5rem;
   margin: 1rem 0;
   background-color: #4b4b4b;
+  width: 100%;
 }
 
 .expense-item__description {
