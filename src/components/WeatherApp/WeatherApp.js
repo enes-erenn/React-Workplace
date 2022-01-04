@@ -1,12 +1,10 @@
 import React from "react";
-import WeatherChart from "./WeatherChart.js";
-import WeatherAPI from "./WeatherDegree.js"
+import WeatherCard from "./WeatherCard.js";
 
 function WeatherApp() {
   return (
     <div>
-      <WeatherChart />
-      <WeatherAPI />
+      <WeatherCard />
     </div>
   );
 }

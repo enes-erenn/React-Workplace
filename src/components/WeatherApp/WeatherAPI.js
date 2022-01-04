@@ -39,7 +39,9 @@ function WeatherAPI() {
         <img src={imgUrl} alt="" />
         <span>{weatherDeg}°C</span>
       </div>
-      <span>{weatherDes}</span>
+      <div className="box-description">
+        <span>{weatherDes}</span>
+      </div>
     </div>
   );
 }

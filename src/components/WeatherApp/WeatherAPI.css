@@ -33,3 +33,11 @@ img {
   align-items: center;
   justify-content: center;
 }
+.box-description{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+.box-description::first-letter {
+    text-transform: capitalize;
+}
