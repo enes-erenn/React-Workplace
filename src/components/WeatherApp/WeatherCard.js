@@ -1,8 +1,8 @@
 import React from "react";
-import "./WeatherChart.css";
+import "./WeatherCard.css";
 import WeatherAPI from "./WeatherAPI.js";
 
-function WeatherChart() {
+function WeatherCard() {
   return (
     <div className="container">
       <WeatherAPI />
@@ -10,4 +10,4 @@ function WeatherChart() {
   );
 }
 
-export default WeatherChart;
+export default WeatherCard;
