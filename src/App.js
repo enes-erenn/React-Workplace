@@ -1,49 +1,44 @@
-
-import './App.css';
+import "./App.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
-  const [onHover, setOnHover] = useState(false)
+  const [onHover, setOnHover] = useState(false);
 
   return (
     <div className="App">
       <section>
         <article>
           <Link to="/contacts">
-              <div 
-              className="sides" 
+            <div
+              className="sides"
               onMouseEnter={() => setOnHover(true)}
               onMouseLeave={() => setOnHover(false)}
-              >
-          
-              <iframe title="contacts" src="/contacts" scrolling="no"></iframe>
-              {onHover && (
-              <p>
-                See on Page
-              </p>
-              )}
+            >
+              {onHover && <p>See on Page</p>}
             </div>
           </Link>
         </article>
-        
+
         <article>
-        <div className="sides">2</div>
-        </article>
-        <article>
-        <Link to="/expensesapp">
-              <div 
-              className="sides" 
+          <Link to="/weatherapp">
+            <div
+              className="sides"
               onMouseEnter={() => setOnHover(true)}
               onMouseLeave={() => setOnHover(false)}
-              >
-          
-              <iframe title="expenses" src="/expenses" scrolling="no"></iframe>
-              {onHover && (
-              <p>
-                See on Page
-              </p>
-              )}
+            >
+              {onHover && <p>See on Page</p>}
+            </div>
+          </Link>
+        </article>
+        <article>
+          <Link to="/expensesapp">
+            <div
+              className="sides"
+              onMouseEnter={() => setOnHover(true)}
+              onMouseLeave={() => setOnHover(false)}
+            >
+              {onHover && <p>See on Page</p>}
             </div>
           </Link>
         </article>

@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 36rem;
+    height: 12rem;
+    border: 1px solid;
+}

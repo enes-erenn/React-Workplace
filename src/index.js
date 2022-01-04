@@ -1,16 +1,12 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 import { render } from "react-dom";
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import Contacts from "./components/contacts/index.js"
-import ExpensesApp from "./components/expenses/ExpensesApp.js"
-
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contacts from "./components/contacts/index.js";
+import ExpensesApp from "./components/expenses/ExpensesApp.js";
+import WeatherApp from "./components/WeatherApp/WeatherApp.js";
 
 render(
   <BrowserRouter>
@@ -18,9 +14,10 @@ render(
       <Route path="/" element={<App />} />
       <Route path="contacts" element={<Contacts />} />
       <Route path="expensesapp" element={<ExpensesApp />} />
+      <Route path="weatherapp" element={<WeatherApp />} />
     </Routes>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
