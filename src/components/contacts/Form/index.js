@@ -25,7 +25,7 @@ function Form({ addContact, contacts }) {
 
   return (
     <div id="form-container">
-      <h4 id="heading-form">Contacts</h4>
+      <h4 id="heading-form">Add a Contact</h4>
       <form onSubmit={onSubmit}>
         <div>
           <input
@@ -35,6 +35,7 @@ function Form({ addContact, contacts }) {
             placeholder="Full Name"
             onChange={onChangeInput}
             value={form.fullName}
+            required
           ></input>
         </div>
 
@@ -46,6 +47,7 @@ function Form({ addContact, contacts }) {
             placeholder="Phone Number"
             onChange={onChangeInput}
             value={form.phoneNumber}
+            required
           ></input>
         </div>
 

@@ -1,28 +1,28 @@
 import { useState } from "react";
 import List from "./List";
 import Form from "./Form";
-import "./style.css";
+import "./styles.css";
 
 export default function Contacts() {
   const [contacts, setContacts] = useState([
     {
-      fullName: "Enes",
-      phoneNumber: "123",
+      fullName: "John Doe",
+      phoneNumber: "123 456 78 90",
     },
     {
-      fullName: "Ahmet",
-      phoneNumber: "321",
+      fullName: "Oliver Ramos",
+      phoneNumber: "123 456 78 90",
     },
     {
-      fullName: "Mehmet",
+      fullName: "Violet Castro",
       phoneNumber: "222",
     },
     {
-      fullName: "Canan",
+      fullName: "Ava Calva",
       phoneNumber: "444",
     },
     {
-      fullName: "Berfin",
+      fullName: "Finn Torres",
       phoneNumber: "555",
     },
   ]);
