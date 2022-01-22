@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import "./WeatherAPI.css";
 
 function WeatherAPI() {
   const key = "569e07fb109c0a84bf1f94765ccfcf4e";
@@ -9,13 +8,13 @@ function WeatherAPI() {
   const [weatherIcon, setWeatherIcon] = useState();
   const [weatherCity, setWeatherCity] = useState();
   const [weatherDes, setWeatherDes] = useState();
-  let city = "ankara";
+  let city = "washington";
 
   useEffect(() => {
     const getData = () => {
       axios
         .get(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=tr`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=en`
         )
         .then((res) => {
           setWeatherCity(res.data.name);
@@ -33,7 +32,7 @@ function WeatherAPI() {
   let imgUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
 
   return (
-    <div className="box">
+    <div>
       <p>{weatherCity}</p>
       <div className="box__img-deg">
         <img src={imgUrl} alt="" />

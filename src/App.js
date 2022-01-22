@@ -10,7 +10,7 @@ function App() {
             <h3>Contacts App</h3>
             <img
               class="imgs"
-              src="src\components\Assets\Images\contacts-app.png"
+              src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/contacts-app.png"
               alt=""
             />
           </div>

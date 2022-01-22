@@ -55,7 +55,7 @@ a {
 .imgs {
   width: 100%;
   height: 76%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 h3 {
