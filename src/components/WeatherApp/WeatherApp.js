@@ -1,9 +1,11 @@
 import React from "react";
-import WeatherCard from "./WeatherCard.js";
+import WeatherCard from "./UI/Card.js";
+import Header from "./Header/Header.js";
 
 function WeatherApp() {
   return (
     <div>
+      <Header />
       <WeatherCard />
     </div>
   );
