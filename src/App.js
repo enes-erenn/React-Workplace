@@ -10,7 +10,7 @@ function App() {
             <h3>Contacts App</h3>
             <img
               class="imgs"
-              src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              src="src\components\Assets\Images\contacts-app.png"
               alt=""
             />
           </div>

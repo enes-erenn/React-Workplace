@@ -58,10 +58,8 @@ a {
   object-fit: fill;
 }
 
-iframe {
-  width: 100%;
-  overflow: auto;
-  transform: scale(0.8);
+h3 {
+  padding: 2px 0;
 }
 
 @keyframes gradient {
