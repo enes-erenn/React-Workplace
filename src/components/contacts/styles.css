@@ -1,0 +1,111 @@
+#contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #005f73;
+  user-select: none;
+}
+
+#container {
+  background-color: #fde4cf;
+  padding: 1rem 0;
+  border-radius: 10px;
+  width: 480px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+form {
+  margin: 1rem 0 0 0;
+}
+
+li {
+  justify-content: space-around;
+  /* background-color: #eef;  This is affecting the other components */
+  margin: 10px 0;
+  padding: 4px 1rem;
+  border-bottom: 1px solid #6b705c;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+#form-container {
+  border-right: 1px solid gray;
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+#heading-form {
+  width: 100%;
+  text-align: center;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.input-add {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+#input-btn {
+  float: right;
+  margin: 1rem 0 0 0;
+  width: 50%;
+  padding: 6px 0;
+}
+
+#list-container {
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+#filter {
+  width: 100%;
+  height: 2rem;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 4px;
+}
+
+#total {
+  margin: 12px 0 0 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: right;
+}
+
+#list {
+  width: 100%;
+  height: auto;
+  background-color: #fcd5ce;
+  border-radius: 10px;
+  padding: 2px 10px;
+  list-style: none;
+  max-height: 8rem;
+  min-height: 8rem;
+  overflow-y: scroll;
+}
+
+#list::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 1rem;
+}
+
+#list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #264653;
+}
