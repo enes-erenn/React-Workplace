@@ -1,6 +1,6 @@
 import React from "react";
-import "./WeatherCard.css";
-import WeatherAPI from "./WeatherAPI.js";
+import "./Card.css";
+import WeatherAPI from "../WeatherAPI.js";
 
 function WeatherCard() {
   return (
