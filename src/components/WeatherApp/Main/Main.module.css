@@ -9,9 +9,10 @@ main {
   min-height: 74vh;
   padding: 3rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  background: src("src\components\Assets\Videos\Raining.mp4");
 }
 
 label {
@@ -23,7 +24,7 @@ label {
   padding-bottom: 6px;
 }
 
-.input-container {
+.inputContainer {
   width: 40%;
   display: flex;
   align-items: center;
@@ -34,7 +35,23 @@ label {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-input[type="text"] {
+.outputContainer {
+  margin-top: 6rem;
+  background: url("https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1975&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 54rem;
+  height: 24rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+#search {
   width: 12rem;
   height: 2rem;
   border-radius: 1rem 0 0 1rem;
@@ -43,7 +60,7 @@ input[type="text"] {
   padding: 2px 6px;
 }
 
-input[type="submit"] {
+#glass {
   width: 3rem;
   padding: 2px 0;
   height: 2rem;

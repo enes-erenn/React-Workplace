@@ -21,20 +21,20 @@ nav {
   padding: 0 3rem;
 }
 
-#nav-links {
+#navLinks {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
 }
 
-.nav-link {
+.navLink {
   padding: 1 rem;
   transition: all 0.4s ease;
   font-weight: 500;
 }
 
-.nav-link:hover {
+.navLink:hover {
   text-decoration: underline;
   color: #bc4749;
 }

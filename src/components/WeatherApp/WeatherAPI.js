@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import styles from "./WeatherApp.module.css";
 
 function WeatherAPI(props) {
   const key = "569e07fb109c0a84bf1f94765ccfcf4e";
@@ -27,11 +28,11 @@ function WeatherAPI(props) {
   return (
     <div>
       <p>{weatherCity}</p>
-      <div className="box__img-deg">
+      <div className={styles.box__imgDeg}>
         <img src={imgUrl} alt="" />
         <span>{weatherDeg}°C</span>
       </div>
-      <div className="box-description">
+      <div className={styles.boxDescription}>
         <span>{weatherDes}</span>
       </div>
     </div>

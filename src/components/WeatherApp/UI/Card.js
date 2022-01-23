@@ -1,10 +1,10 @@
 import React from "react";
-import "./Card.css";
+import styles from "./Card.module.css";
 import WeatherAPI from "../WeatherAPI.js";
 
 function WeatherCard(props) {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <WeatherAPI weatherCity={props.weatherCity} />
     </div>
   );

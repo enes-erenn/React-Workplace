@@ -1,6 +1,6 @@
 import React from "react";
 import WeatherCard from "../UI/Card.js";
-import "./Wrapper.css";
+import styles from "./Wrapper.module.css";
 
 function Wrapper() {
   const cities = [
@@ -13,7 +13,7 @@ function Wrapper() {
     "new york city",
   ];
   return (
-    <aside>
+    <aside id={styles.contactsWrapper}>
       <WeatherCard weatherCity={cities[0]} />
       <WeatherCard weatherCity={cities[1]} />
       <WeatherCard weatherCity={cities[2]} />

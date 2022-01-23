@@ -1,24 +1,24 @@
 import React from "react";
-import "./Header.css";
+import styles from "./Header.module.css";
 
 function Header() {
   return (
     <header>
       <nav>
-        <h2 id="logo">
+        <h2 id={styles.logo}>
           Ho
-          <span id="weather">
-            <span id="w">w</span>eather
+          <span id={styles.weather}>
+            <span id={styles.w}>w</span>eather
           </span>
         </h2>
-        <div id="nav-links">
-          <a class="nav-link" href="/">
+        <div id={styles.navLinks}>
+          <a class={styles.navLink} href="/">
             App
           </a>
-          <a class="nav-link" href="/">
+          <a class={styles.navLink} href="/">
             API
           </a>
-          <a class="nav-link" href="/">
+          <a class={styles.navLink} href="/">
             Author
           </a>
         </div>

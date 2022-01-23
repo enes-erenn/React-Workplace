@@ -7,7 +7,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-body {
+#weatherApp {
   background: hsla(186, 33%, 94%, 1);
 
   background: linear-gradient(
@@ -27,7 +27,7 @@ body {
     hsla(186, 33%, 94%, 1) 0%,
     hsla(216, 41%, 79%, 1) 100%
   );
-
+  
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
 }
 
@@ -43,18 +43,18 @@ img {
   width: 100%;
   height: auto;
 }
-.box__img-deg {
+.box__imgDeg {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
 }
-.box-description {
+.boxDescription {
   width: 100%;
   text-align: center;
   font-size: 12px;
 }
-.box-description::first-letter {
+.boxDescription::first-letter {
   text-transform: capitalize;
 }
