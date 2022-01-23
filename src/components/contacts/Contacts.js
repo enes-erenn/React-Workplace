@@ -1,7 +1,7 @@
 import { useState } from "react";
-import List from "./List";
-import Form from "./Form";
-import "./styles.css";
+import List from "./List/ContactList";
+import Form from "./Form/ContactForm";
+import styles from "./contacts.module.css";
 
 export default function Contacts() {
   const [contacts, setContacts] = useState([
@@ -28,8 +28,8 @@ export default function Contacts() {
   ]);
 
   return (
-    <div id="contacts">
-      <div id="container">
+    <div id={styles.contacts}>
+      <div id={styles.container}>
         <Form addContact={setContacts} contacts={contacts} />
         <List contacts={contacts} />
       </div>

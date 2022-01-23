@@ -4,7 +4,7 @@ import { render } from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Contacts from "./components/contacts/index.js";
+import Contacts from "./components/contacts/Contacts.js";
 import ExpensesApp from "./components/expenses/ExpensesApp.js";
 import WeatherApp from "./components/WeatherApp/WeatherApp.js";
 

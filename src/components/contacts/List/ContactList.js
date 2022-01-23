@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../contacts.module.css";
 
 function List({ contacts }) {
   const [filterText, setFilterText] = useState("");
@@ -16,14 +17,14 @@ function List({ contacts }) {
   let list = filtered.length < 4 ? filtered : contactList;
 
   return (
-    <div id="list-container">
+    <div id={styles.listContainer}>
       <input
-        id="filter"
+        id={styles.filter}
         placeholder="Search for a Contact"
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
       />
-      <ul id="list">
+      <ul id={styles.list}>
         {list.map((contact, i) => (
           <li key={i}>
             <span>{contact.fullName}</span>
@@ -31,7 +32,7 @@ function List({ contacts }) {
           </li>
         ))}
       </ul>
-      <p id="total">Total Contacts ({filtered.length})</p>
+      <p id={styles.total}>Total Contacts ({filtered.length})</p>
     </div>
   );
 }

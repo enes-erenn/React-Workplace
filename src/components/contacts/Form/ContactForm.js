@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import styles from "../contacts.module.css";
 
 const initialFormValues = { fullName: "", phoneNumber: "" };
 
@@ -24,12 +25,12 @@ function Form({ addContact, contacts }) {
   };
 
   return (
-    <div id="form-container">
-      <h4 id="heading-form">Add a Contact</h4>
+    <div id={styles.formContainer}>
+      <h4 id={styles.headingForm}>Add a Contact</h4>
       <form onSubmit={onSubmit}>
         <div>
           <input
-            className="input-add"
+            className={styles.inputAdd}
             name="fullName"
             type="text"
             placeholder="Full Name"
@@ -41,7 +42,7 @@ function Form({ addContact, contacts }) {
 
         <div>
           <input
-            className="input-add"
+            className={styles.inputAdd}
             name="phoneNumber"
             type="number"
             placeholder="Phone Number"
@@ -52,7 +53,7 @@ function Form({ addContact, contacts }) {
         </div>
 
         <div>
-          <button id="input-btn">Add</button>
+          <button id={styles.inputBtn}>Add</button>
         </div>
       </form>
     </div>
