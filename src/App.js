@@ -1,15 +1,15 @@
-import "./App.css";
+import styles from "./App.module.css";
 import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <section className="App">
+    <section className={styles.App}>
       <article>
         <Link to="/contacts">
-          <div className="works">
+          <div className={styles.works}>
             <h3>Contacts App</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/contacts-app.png"
               alt=""
             />
@@ -19,10 +19,10 @@ function App() {
 
       <article>
         <Link to="/weatherapp">
-          <div className="works">
+          <div className={styles.works}>
             <h3>Weather App</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -32,10 +32,10 @@ function App() {
 
       <article>
         <Link to="/expensesapp">
-          <div className="works">
+          <div className={styles.works}>
             <h3>Expenses App</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -45,10 +45,10 @@ function App() {
 
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>4</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -57,10 +57,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>5</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -69,10 +69,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>6</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -81,10 +81,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>7</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -93,10 +93,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>8</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -105,10 +105,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>9</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -117,10 +117,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>10</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -129,10 +129,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>11</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -141,10 +141,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>12</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -153,10 +153,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>13</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -165,10 +165,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>14</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
@@ -177,10 +177,10 @@ function App() {
       </article>
       <article>
         <Link to="">
-          <div className="works">
+          <div className={styles.works}>
             <h3>15</h3>
             <img
-              class="imgs"
+              class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt=""
             />
