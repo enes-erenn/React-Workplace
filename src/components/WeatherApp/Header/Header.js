@@ -12,13 +12,28 @@ function Header() {
           </span>
         </h2>
         <div id={styles.navLinks}>
-          <a class={styles.navLink} href="/">
-            App
+          <a
+            className={styles.navLink}
+            href="https://github.com/thenesern/React-Workplace/tree/master/src/components/WeatherApp"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Source Code
           </a>
-          <a class={styles.navLink} href="/">
+          <a
+            className={styles.navLink}
+            href="https://openweathermap.org/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             API
           </a>
-          <a class={styles.navLink} href="/">
+          <a
+            className={styles.navLink}
+            href="https://github.com/thenesern"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Author
           </a>
         </div>
