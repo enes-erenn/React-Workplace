@@ -17,17 +17,22 @@ function Main(props) {
 
   const clearSky =
     "https://player.vimeo.com/external/420221145.sd.mp4?s=506857402d98eb686107e5ec482050bea5f1b33e&profile_id=139&oauth2_token_id=57447761";
+
   const [videoLink, setVideoLink] = useState(snowing);
   const [inputCity, setInputCity] = useState("Ankara");
   const [input, setInput] = useState();
+  const [weatherBg, setWeatherBg] = useState();
+  const [inputValue, setInputValue] = useState("");
 
   function citySubmitHandler(e) {
     e.preventDefault();
     setInputCity(input);
+    setInputValue("");
   }
 
   function inputChangeHandler(e) {
     setInput(e.target.value);
+    setInputValue(e.target.value);
   }
 
   return (
@@ -39,6 +44,7 @@ function Main(props) {
           id="input"
           className={styles.search}
           onChange={inputChangeHandler}
+          value={inputValue}
         />
         <input type="submit" className={styles.glass} value="🔍" />
       </form>
