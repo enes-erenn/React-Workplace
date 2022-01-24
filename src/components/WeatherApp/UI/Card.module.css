@@ -7,3 +7,36 @@
   padding: 1rem;
   background-color: #e6cebc;
 }
+
+#cityName {
+  width: 100%;
+  text-align: center;
+}
+
+span {
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.box__imgDeg {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxDescription {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.boxDescription::first-letter {
+  text-transform: capitalize;
+}

@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 // Styles
 import styles from "./WeatherApp.module.css";
+import WeatherCard from "./UI/Card.js";
 
 function WeatherAPI(props) {
   const key = "569e07fb109c0a84bf1f94765ccfcf4e";
@@ -14,7 +15,7 @@ function WeatherAPI(props) {
   const [weatherDes, setWeatherDes] = useState();
 
   let city = props.weatherCity;
-  
+
   useEffect(() => {
     axios
       .get(
@@ -32,14 +33,12 @@ function WeatherAPI(props) {
   let imgUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
   return (
     <div>
-      <p id={styles.cityName}>{weatherCity}</p>
-      <div className={styles.box__imgDeg}>
-        <img src={imgUrl} alt="" />
-        <span>{weatherDeg}°C</span>
-      </div>
-      <div className={styles.boxDescription}>
-        <span>{weatherDes}</span>
-      </div>
+      <WeatherCard
+        weatherCity={weatherCity}
+        weatherDeg={weatherDeg}
+        imgUrl={imgUrl}
+        weatherDes={weatherDes}
+      />
     </div>
   );
 }

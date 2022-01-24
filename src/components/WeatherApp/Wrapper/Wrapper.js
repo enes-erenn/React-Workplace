@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherCard from "../UI/Card.js";
+import WeatherAPI from "../WeatherAPI.js";
 import styles from "./Wrapper.module.css";
 
 function Wrapper() {
@@ -17,16 +17,16 @@ function Wrapper() {
   ];
   return (
     <aside id={styles.contactsWrapper}>
-      <WeatherCard weatherCity={cities[0]} />
-      <WeatherCard weatherCity={cities[1]} />
-      <WeatherCard weatherCity={cities[2]} />
-      <WeatherCard weatherCity={cities[3]} />
-      <WeatherCard weatherCity={cities[4]} />
-      <WeatherCard weatherCity={cities[5]} />
-      <WeatherCard weatherCity={cities[6]} />
-      <WeatherCard weatherCity={cities[7]} />
-      <WeatherCard weatherCity={cities[8]} />
-      <WeatherCard weatherCity={cities[9]} />
+      <WeatherAPI weatherCity={cities[0]} />
+      <WeatherAPI weatherCity={cities[1]} />
+      <WeatherAPI weatherCity={cities[2]} />
+      <WeatherAPI weatherCity={cities[3]} />
+      <WeatherAPI weatherCity={cities[4]} />
+      <WeatherAPI weatherCity={cities[5]} />
+      <WeatherAPI weatherCity={cities[6]} />
+      <WeatherAPI weatherCity={cities[7]} />
+      <WeatherAPI weatherCity={cities[8]} />
+      <WeatherAPI weatherCity={cities[9]} />
     </aside>
   );
 }
