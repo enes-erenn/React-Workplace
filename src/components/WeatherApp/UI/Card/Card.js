@@ -1,4 +1,4 @@
-import React from "react";
+// Styles
 import styles from "./Card.module.css";
 
 function WeatherCard(props) {
@@ -6,7 +6,7 @@ function WeatherCard(props) {
     <div className={styles.container}>
       <p id={styles.cityName}>{props.weatherCity}</p>
       <div className={styles.box__imgDeg}>
-        <img src={props.imgUrl} alt="" />
+        <img className={styles.img}src={props.imgUrl} alt="" />
         <span>{props.weatherDeg}°C</span>
       </div>
       <div className={styles.boxDescription}>
