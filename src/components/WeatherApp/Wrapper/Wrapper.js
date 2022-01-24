@@ -11,6 +11,9 @@ function Wrapper() {
     "paris",
     "istanbul",
     "new york city",
+    "rome",
+    "macau",
+    "moscow",
   ];
   return (
     <aside id={styles.contactsWrapper}>
@@ -21,6 +24,9 @@ function Wrapper() {
       <WeatherCard weatherCity={cities[4]} />
       <WeatherCard weatherCity={cities[5]} />
       <WeatherCard weatherCity={cities[6]} />
+      <WeatherCard weatherCity={cities[7]} />
+      <WeatherCard weatherCity={cities[8]} />
+      <WeatherCard weatherCity={cities[9]} />
     </aside>
   );
 }
