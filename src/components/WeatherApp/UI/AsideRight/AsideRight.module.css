@@ -1,0 +1,27 @@
+.asideRight {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a9396;
+  padding: 1rem;
+  border-radius: 12px;
+  color: #e5e5e5;
+}
+
+.feelsHeader {
+  text-align: center;
+}
+
+.feelsLikes {
+  margin-top: 2rem;
+  display: block;
+}
+
+.feels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #005f73;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 10px;
+}

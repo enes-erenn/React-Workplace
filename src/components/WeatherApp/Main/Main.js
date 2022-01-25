@@ -5,7 +5,7 @@ import styles from "./Main.module.css";
 // Components
 import InputAPI from "../InputAPI";
 
-function Main(props) {
+function Main() {
   const snowing =
     "https://player.vimeo.com/external/514009030.sd.mp4?s=501ec0ae1120b341bcf2b560958515343bf9d2ed&profile_id=139&oauth2_token_id=57447761";
 
@@ -21,7 +21,6 @@ function Main(props) {
   const [videoLink, setVideoLink] = useState(snowing);
   const [inputCity, setInputCity] = useState("Ankara");
   const [input, setInput] = useState();
-  const [weatherBg, setWeatherBg] = useState();
   const [inputValue, setInputValue] = useState("");
 
   function citySubmitHandler(e) {
@@ -49,12 +48,7 @@ function Main(props) {
         <input type="submit" className={styles.glass} value="🔍" />
       </form>
       <div className={styles.outputContainer}>
-        <div className={styles.output}>
-          <InputAPI inputCity={inputCity} />
-        </div>
-        <video className={styles.video} autoPlay muted loop>
-          <source src={videoLink} type="video/mp4" />
-        </video>
+        <InputAPI cityName={inputCity} />
       </div>
     </main>
   );
