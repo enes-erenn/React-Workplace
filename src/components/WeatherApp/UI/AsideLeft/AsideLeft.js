@@ -2,11 +2,29 @@
 import styles from "./AsideLeft.module.css";
 
 function Aside(props) {
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const date = new Date();
+
   return (
     <div className={styles.aside}>
       <div className={styles.days}>
         <div className={styles.day}>
-          <h3 className={styles.dayName}>Day One</h3>
+          <h3 className={styles.dayName}>{weekday[date.getDay()]}</h3>
           <div>
             <img
               className={styles.img}
@@ -24,7 +42,7 @@ function Aside(props) {
           </div>
         </div>
         <div className={styles.day}>
-          <h3 className={styles.dayName}>Day Two</h3>
+          <h3 className={styles.dayName}>{weekday[date.getDay() + 1]}</h3>
           <div>
             <img
               className={styles.img}
@@ -42,7 +60,7 @@ function Aside(props) {
           </div>
         </div>
         <div className={styles.day}>
-          <h3 className={styles.dayName}>Day Three</h3>
+          <h3 className={styles.dayName}>{weekday[date.getDay() + 2]}</h3>
           <div>
             <img
               className={styles.img}
@@ -60,7 +78,7 @@ function Aside(props) {
           </div>
         </div>
         <div className={styles.day}>
-          <h3 className={styles.dayName}>Day Four</h3>
+          <h3 className={styles.dayName}>{weekday[date.getDay() + 3]}</h3>
           <div>
             <img
               className={styles.img}
@@ -78,7 +96,7 @@ function Aside(props) {
           </div>
         </div>
         <div className={styles.day}>
-          <h3 className={styles.dayName}>Day Five</h3>
+          <h3 className={styles.dayName}>{weekday[date.getDay() + 4]}</h3>
           <div>
             <img
               className={styles.img}
@@ -96,7 +114,7 @@ function Aside(props) {
           </div>
         </div>
         <div className={styles.day}>
-          <h3 className={styles.dayName}>Day Six</h3>
+          <h3 className={styles.dayName}>{weekday[date.getDay() + 5]}</h3>
           <div>
             <img
               className={styles.img}
@@ -114,7 +132,7 @@ function Aside(props) {
           </div>
         </div>
         <div className={styles.day}>
-          <h3 className={styles.dayName}>Day Seven</h3>
+          <h3 className={styles.dayName}>{weekday[date.getDay() + 6]}</h3>
           <div>
             <img
               className={styles.img}
