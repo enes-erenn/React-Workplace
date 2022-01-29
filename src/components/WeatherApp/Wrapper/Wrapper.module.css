@@ -5,7 +5,32 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 2rem;
   gap: 1rem;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 1366px) {
+  #contactsWrapper {
+    height: 18vh;
+  }
+
+  #contactsWrapper {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #contactsWrapper {
+    padding: 6px 1rem;
+    height: 12vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #contactsWrapper {
+    margin-top: 4%;
+    width: 100%;
+    height: auto;
+  }
 }

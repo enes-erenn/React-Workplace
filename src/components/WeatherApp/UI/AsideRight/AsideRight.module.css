@@ -1,9 +1,11 @@
 .asideRight {
+  width: 100%;
+  height: auto;
   display: block;
   align-items: center;
   justify-content: center;
   background-color: #0a9396;
-  padding: 1rem;
+  padding: 10px;
   border-radius: 12px;
   color: #e5e5e5;
 }
@@ -17,11 +19,36 @@
   display: block;
 }
 
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .feels {
+  font-size: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #005f73;
   margin-bottom: 10px;
   padding: 12px;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .asideRight {
+    order: 2;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .asideRight {
+    width: 100%;
+    margin: 0 2%;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }

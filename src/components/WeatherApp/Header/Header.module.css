@@ -63,4 +63,33 @@ nav {
   header {
     height: 8vh;
   }
+
+  nav {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    height: 6vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #logo {
+    font-size: 20px;
+  }
+
+  #w {
+    font-size: 20px;
+  }
+
+  #weather {
+    font-size: 20px;
+  }
+
+  #navLinks {
+    gap: 1rem;
+    font-size: 14px;
+  }
 }
