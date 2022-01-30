@@ -1,0 +1,21 @@
+.filterHeading {
+  color: #eee;
+}
+.expensesFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 2rem;
+}
+
+.filter {
+  padding: 4px;
+  border: none;
+  outline: none;
+  background-color: #f8dfff;
+  border-radius: 4px;
+}
+
+.filter:hover {
+  cursor: pointer;
+}

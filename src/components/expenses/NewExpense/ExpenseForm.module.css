@@ -1,4 +1,4 @@
-.new-expense__controls {
+.newExpense__controls {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -6,13 +6,13 @@
   text-align: left;
 }
 
-.new-expense__control label {
+.newExpense__control label {
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
 }
 
-.new-expense__control input {
+.newExpense__control input {
   font: inherit;
   padding: 0.5rem;
   border-radius: 6px;
@@ -21,6 +21,6 @@
   max-width: 100%;
 }
 
-.new-expense__actions {
+.newExpense__actions {
   text-align: right;
 }

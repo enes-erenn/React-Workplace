@@ -1,4 +1,4 @@
-import React from "react";
+// Components
 import Chart from "./Chart/Chart.js";
 
 function ExpensesChart(props) {

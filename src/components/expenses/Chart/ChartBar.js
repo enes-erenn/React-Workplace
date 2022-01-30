@@ -1,6 +1,5 @@
-import "./ChartBar.css";
-
-import React from "react";
+// Styles
+import styles from "./ChartBar.module.css";
 
 function ChartBar(props) {
   let barHeight = "0%";
@@ -9,11 +8,14 @@ function ChartBar(props) {
   }
 
   return (
-    <div className="chart-bar">
-      <div className="chart-bar__inner">
-        <div className="chart-bar__fill" style={{ height: barHeight }}></div>
+    <div className={styles.chartBar}>
+      <div className={styles.chartBar__inner}>
+        <div
+          className={styles.chartBar__fill}
+          style={{ height: barHeight }}
+        ></div>
       </div>
-      <div className="chart-label">{props.label}</div>
+      <div className={styles.chartLabel}>{props.label}</div>
     </div>
   );
 }
