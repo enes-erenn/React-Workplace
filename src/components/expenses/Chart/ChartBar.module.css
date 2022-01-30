@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 2rem;  
 }
 
 .chartBar__inner {
@@ -27,4 +28,13 @@
   font-weight: bold;
   font-size: 0.5rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .chartBar__inner {
+    width: 1.2rem;
+  }
+  .chartBar {
+    font-size: 10px;
+  }
 }
