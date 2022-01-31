@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contacts from "./components/contacts/Contacts.js";
 import ExpensesApp from "./components/expenses/ExpensesApp.js";
 import WeatherApp from "./components/WeatherApp/WeatherApp.js";
+import AddUserApp from "./components/AddUserApp/AddUserApp.js";
 
 render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ render(
       <Route path="contacts" element={<Contacts />} />
       <Route path="expensesapp" element={<ExpensesApp />} />
       <Route path="weatherapp" element={<WeatherApp />} />
+      <Route path="adduserapp" element={<AddUserApp />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
