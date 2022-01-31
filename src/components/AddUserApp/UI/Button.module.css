@@ -3,9 +3,11 @@
     border: 1px solid #4f005f;
     background: #4f005f;
     color: white;
-    padding: 0.25rem 1rem;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
     cursor: pointer;
-    margin-left: auto;
+    float: right;
+
   }
   
   .button:hover,

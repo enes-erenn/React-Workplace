@@ -5,6 +5,7 @@ import styles from "./UsersList.module.css";
 const UsersList = (props) => {
   return (
     <Card className={styles.users}>
+      <h3 className={styles.listHeader}>User List</h3>
       <ul>
         {props.users.map((user) => (
           <li key={user.id}>

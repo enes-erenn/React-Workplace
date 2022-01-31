@@ -35,7 +35,8 @@ function App() {
             <img
               class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/Contacts%20App/contacts-app.png"
-              alt=""
+              alt="Contacts App"
+              title="Contacts App"
             />
           </div>
         </Link>
@@ -48,7 +49,8 @@ function App() {
             <img
               class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/Weather%20App/weather-app.png"
-              alt=""
+              alt="Weather App"
+              title="Weather App"
             />
           </div>
         </Link>
@@ -61,20 +63,22 @@ function App() {
             <img
               class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/Expenses%20App/expenses-app.png"
-              alt=""
+              alt="Expenses App"
+              title="Expenses App"
             />
           </div>
         </Link>
       </article>
 
       <article>
-        <Link to="" onClick={errorHandler}>
+        <Link to="/adduserapp">
           <div className={styles.works}>
             <h3>Add User App</h3>
             <img
               class={styles.imgs}
-              src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt=""
+              src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/AddUser%20App/adduser-app.png"
+              alt="Add User App"
+              title="Add User App"
             />
           </div>
         </Link>

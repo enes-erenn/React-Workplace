@@ -13,7 +13,7 @@ const ErrorModal = (props) => {
           <h2>{props.title}</h2>
         </header>
         <div className={styles.content}>
-          <p>{props.message}</p>
+          <p className={styles.errorMes}>{props.message}</p>
         </div>
         <footer className={styles.actions}>
           <Button onClick={props.onConfirm}>OK</Button>

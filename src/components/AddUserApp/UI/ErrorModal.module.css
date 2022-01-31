@@ -8,6 +8,11 @@
   background: rgba(0, 0, 0, 0.75);
 }
 
+.errorMes {
+  float: left;
+  padding: 1rem;
+}
+
 .modal {
   position: fixed;
   top: 30vh;
@@ -19,6 +24,10 @@
 
 .header {
   background: #4f005f;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   padding: 1rem;
 }
 
@@ -34,7 +43,9 @@
 .actions {
   padding: 1rem 0;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
 }
 
 @media (min-width: 768px) {
