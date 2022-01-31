@@ -19,7 +19,7 @@
   display: block;
 }
 
-p {
+.feelsHeaders {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -12,15 +12,15 @@ function AsideRight(props) {
         </div>
         <div className={styles.feels}>
           <h3>Night:</h3>
-          <p>{props.feelsNight} °C</p>
+          <p className={styles.feelsHeaders}>{props.feelsNight} °C</p>
         </div>
         <div className={styles.feels}>
           <h3>Morning:</h3>
-          <p>{props.feelsMorn} °C</p>
+          <p className={styles.feelsHeaders}>{props.feelsMorn} °C</p>
         </div>
         <div className={styles.feels}>
           <h3>Evening:</h3>
-          <p>{props.feelsEve} °C</p>
+          <p className={styles.feelsHeaders}>{props.feelsEve} °C</p>
         </div>
       </div>
     </div>
