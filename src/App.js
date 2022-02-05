@@ -28,10 +28,10 @@ function App() {
           onConfirm={errorConfirm}
         />
       )}
-      <article>
+      <article  className={styles.pages}>
         <Link to="/contacts">
           <div className={styles.works}>
-            <h3>Contacts App</h3>
+            <h3 className={styles.headers}>Contacts App</h3>
             <img
               class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/Contacts%20App/contacts-app.png"
@@ -42,10 +42,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="/weatherapp">
           <div className={styles.works}>
-            <h3>Weather App</h3>
+            <h3 className={styles.headers}>Weather App</h3>
             <img
               class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/Weather%20App/weather-app.png"
@@ -56,10 +56,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="/expensesapp">
           <div className={styles.works}>
-            <h3>Expenses App</h3>
+            <h3 className={styles.headers}>Expenses App</h3>
             <img
               class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/Expenses%20App/expenses-app.png"
@@ -70,10 +70,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="/adduserapp">
           <div className={styles.works}>
-            <h3>Add User App</h3>
+            <h3 className={styles.headers}>Add User App</h3>
             <img
               class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/AddUser%20App/adduser-app.png"
@@ -84,10 +84,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="mymealsapp">
           <div className={styles.works}>
-            <h3>My Meals</h3>
+            <h3 className={styles.headers}>My Meals</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -98,10 +98,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>6</h3>
+            <h3 className={styles.headers}>6</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -111,10 +111,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>7</h3>
+            <h3 className={styles.headers}>7</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -124,10 +124,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>8</h3>
+            <h3 className={styles.headers}>8</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -137,10 +137,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>9</h3>
+            <h3 className={styles.headers}>9</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -150,10 +150,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>10</h3>
+            <h3 className={styles.headers}>10</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -163,10 +163,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>11</h3>
+            <h3 className={styles.headers}>11</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -176,10 +176,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>12</h3>
+            <h3 className={styles.headers}>12</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -189,10 +189,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>13</h3>
+            <h3 className={styles.headers}>13</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -202,10 +202,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>14</h3>
+            <h3 className={styles.headers}>14</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -215,10 +215,10 @@ function App() {
         </Link>
       </article>
 
-      <article>
+      <article  className={styles.pages}>
         <Link to="" onClick={errorHandler}>
           <div className={styles.works}>
-            <h3>15</h3>
+            <h3 className={styles.headers}>15</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
-section {
+.App {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@ section {
   padding: 4rem;
 }
 
-article {
+.pages {
   width: 20rem;
   height: 14rem;
 }
@@ -58,7 +58,7 @@ a {
   object-fit: cover;
 }
 
-h3 {
+.headers {
   padding: 2px 0;
 }
 
