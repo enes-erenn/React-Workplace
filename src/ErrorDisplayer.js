@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Button from "./components/AddUserApp/UI/Button.js";
-import styles from "./components/AddUserApp/UI/Button.module.css";
+import styles from "./components/AddUserApp/UI/ErrorModal.module.css";
 import Card from "./components/AddUserApp/UI/Card.js";
 
 const Backdrop = (props) => {

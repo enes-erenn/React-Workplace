@@ -24,7 +24,6 @@
 
 .header {
   background: #4f005f;
-  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -38,11 +37,11 @@
 
 .content {
   float: left;
+  padding: 1rem;
 }
 
 .actions {
   padding: 1rem 0;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
