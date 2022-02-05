@@ -85,13 +85,14 @@ function App() {
       </article>
 
       <article>
-        <Link to="" onClick={errorHandler}>
+        <Link to="mymealsapp">
           <div className={styles.works}>
-            <h3>5</h3>
+            <h3>My Meals</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt=""
+              alt="My Meals"
+              title="My Meals"
             />
           </div>
         </Link>

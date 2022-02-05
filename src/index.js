@@ -8,6 +8,7 @@ import Contacts from "./components/contacts/Contacts.js";
 import ExpensesApp from "./components/expenses/ExpensesApp.js";
 import WeatherApp from "./components/WeatherApp/WeatherApp.js";
 import AddUserApp from "./components/AddUserApp/AddUserApp.js";
+import MyMealsApp from "./components/MyMeals/MyMealsApp.js";
 
 render(
   <BrowserRouter>
@@ -17,6 +18,8 @@ render(
       <Route path="expensesapp" element={<ExpensesApp />} />
       <Route path="weatherapp" element={<WeatherApp />} />
       <Route path="adduserapp" element={<AddUserApp />} />
+      <Route path="adduserapp" element={<AddUserApp />} />
+      <Route path="mymealsapp" element={<MyMealsApp />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
