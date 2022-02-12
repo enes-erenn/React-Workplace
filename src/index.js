@@ -9,6 +9,7 @@ import ExpensesApp from "./components/expenses/ExpensesApp.js";
 import WeatherApp from "./components/WeatherApp/WeatherApp.js";
 import AddUserApp from "./components/AddUserApp/AddUserApp.js";
 import MyMealsApp from "./components/MyMeals/MyMealsApp.js";
+import FormApp from "./components/FormApp/FormApp.js";
 
 render(
   <BrowserRouter>
@@ -20,6 +21,7 @@ render(
       <Route path="adduserapp" element={<AddUserApp />} />
       <Route path="adduserapp" element={<AddUserApp />} />
       <Route path="mymealsapp" element={<MyMealsApp />} />
+      <Route path="formapp" element={<FormApp />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
