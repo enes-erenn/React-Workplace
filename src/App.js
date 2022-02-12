@@ -45,7 +45,7 @@ function App() {
       <article className={styles.pages}>
         <Link to="/weatherapp">
           <div className={styles.works}>
-            <h3 className={styles.headers}>Weather App</h3>
+            <h3 className={styles.headers}>Howeather - Weather App</h3>
             <img
               class={styles.imgs}
               src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/Weather%20App/weather-app.png"
