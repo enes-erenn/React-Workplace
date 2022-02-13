@@ -99,7 +99,7 @@ function App() {
       </article>
 
       <article className={styles.pages}>
-        <Link to="formapp" onClick={errorHandler}>
+        <Link to="formapp">
           <div className={styles.works}>
             <h3 className={styles.headers}>Form App</h3>
             <img
