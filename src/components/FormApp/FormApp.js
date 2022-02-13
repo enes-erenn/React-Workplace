@@ -1,10 +1,10 @@
-import SimpleInput from "./Form/SimpleInput";
+import BasicForm from "./Form/BasicForm.js";
 import styles from "./FormApp.module.css";
 
 function App() {
   return (
     <div className={styles.app}>
-      <SimpleInput />
+      <BasicForm />
     </div>
   );
 }
