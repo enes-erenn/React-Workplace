@@ -8,6 +8,7 @@
   min-width: 15rem;
   flex: 1;
 }
+
 .form-control {
   margin-bottom: 1rem;
 }
@@ -20,6 +21,7 @@
 .form-control label {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-align: start;
 }
 
 .form-control input,
@@ -61,7 +63,9 @@ button:active {
 .form-actions button {
   margin-left: 1rem;
 }
+
 .error-text {
+  margin-top: 4px;
   color: #b40e0e;
 }
 

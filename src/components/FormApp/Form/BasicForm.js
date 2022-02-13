@@ -1,4 +1,6 @@
+// Styles
 import styles from "./BasicForm.module.css";
+// Custom-Hook
 import useInput from "../../../hooks/use-input.js";
 
 const BasicForm = (props) => {
@@ -10,6 +12,7 @@ const BasicForm = (props) => {
     inputBlurHandler: firstNameBlurHandler,
     reset: resetFirstName,
   } = useInput((value) => value.trim() !== "");
+
   const {
     value: lastNameValue,
     isValid: lastNameIsValid,
@@ -18,6 +21,7 @@ const BasicForm = (props) => {
     inputBlurHandler: lastNameBlurHandler,
     reset: resetLastName,
   } = useInput((value) => value.trim() !== "");
+
   const {
     value: emailValue,
     isValid: emailIsValid,
@@ -30,9 +34,11 @@ const BasicForm = (props) => {
   const firstNameStyles = firstNameHasError
     ? `${styles["form-control"]} ${styles.invalid}`
     : styles["form-control"];
+
   const lastNameStyles = lastNameHasError
     ? `${styles["form-control"]} ${styles.invalid}`
     : styles["form-control"];
+
   const emailStyles = emailHasError
     ? `${styles["form-control"]} ${styles.invalid}`
     : styles["form-control"];
@@ -53,6 +59,7 @@ const BasicForm = (props) => {
     resetLastName();
     resetEmail();
   };
+  
   return (
     <form onSubmit={submitHandler}>
       <div className={styles["control-group"]}>
