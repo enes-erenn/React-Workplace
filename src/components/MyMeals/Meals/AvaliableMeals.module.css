@@ -22,3 +22,16 @@
     transform: translateY(0);
   }
 }
+.MealsLoading {
+  text-align: center;
+  color: #eee;
+  position: absolute;
+  top: 50%;
+}
+
+.MealsError {
+  text-align: center;
+  color: red;
+  position: absolute;
+  top: 50%;
+}
