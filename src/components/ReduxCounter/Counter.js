@@ -2,6 +2,7 @@ import styles from "./Counter.module.css";
 import { useSelector, useDispatch } from "react-redux";
 
 const Counter = () => {
+  const show = useSelector((state) => state.showCounter);
   const dispatch = useDispatch();
   const incrementHandler = () => {
     dispatch({ type: "increment" });
@@ -13,12 +14,14 @@ const Counter = () => {
     dispatch({ type: "increase", amount: 5 });
   };
   const counter = useSelector((state) => state.counter);
-  const toggleCounterHandler = () => {};
+  const toggleCounterHandler = () => {
+    dispatch({ type: "toggle" });
+  };
 
   return (
     <main className={styles.counter}>
       <h1>Redux Counter</h1>
-      <div className={styles.value}>{counter}</div>
+      {show && <div className={styles.value}>{counter}</div>}
       <div>
         <button className={styles.button} onClick={incrementHandler}>
           Increment
