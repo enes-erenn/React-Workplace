@@ -10,6 +10,7 @@ import WeatherApp from "./components/WeatherApp/WeatherApp.js";
 import AddUserApp from "./components/AddUserApp/AddUserApp.js";
 import MyMealsApp from "./components/MyMeals/MyMealsApp.js";
 import FormApp from "./components/FormApp/FormApp.js";
+import ReduxCounterApp from "./components/ReduxCounter/ReduxCounterApp.js";
 
 render(
   <BrowserRouter>
@@ -22,6 +23,7 @@ render(
       <Route path="adduserapp" element={<AddUserApp />} />
       <Route path="mymealsapp" element={<MyMealsApp />} />
       <Route path="formapp" element={<FormApp />} />
+      <Route path="reduxcounter" element={<ReduxCounterApp />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

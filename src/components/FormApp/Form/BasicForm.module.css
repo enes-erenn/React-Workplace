@@ -40,7 +40,7 @@
   background-color: #e0d4fd;
 }
 
-button {
+.button {
   font: inherit;
   background-color: #240370;
   border: 1px solid #240370;
@@ -49,8 +49,8 @@ button {
   cursor: pointer;
 }
 
-button:hover,
-button:active {
+.button:hover,
+.button:active {
   background-color: #33059e;
   border-color: #33059e;
 }
@@ -59,7 +59,7 @@ button:active {
   text-align: right;
 }
 
-.form-actions button {
+.form-actions .button {
   margin-left: 1rem;
 }
 
@@ -78,9 +78,9 @@ button:active {
   background-color: #fbe8d2;
 }
 
-button:disabled,
-button:disabled:hover,
-button:disabled:active {
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active {
   background-color: #eee;
   color: gray;
   border-color: lightgray;

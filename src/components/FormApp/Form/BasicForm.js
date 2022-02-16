@@ -59,7 +59,7 @@ const BasicForm = (props) => {
     resetLastName();
     resetEmail();
   };
-  
+
   return (
     <form onSubmit={submitHandler}>
       <div className={styles["control-group"]}>
@@ -102,7 +102,9 @@ const BasicForm = (props) => {
         {emailHasError && <p className={styles["error-text"]}>Invalid Email</p>}
       </div>
       <div className={styles["form-actions"]}>
-        <button disabled={!formIsValid}>Submit</button>
+        <button className={styles.button} disabled={!formIsValid}>
+          Submit
+        </button>
       </div>
     </form>
   );
