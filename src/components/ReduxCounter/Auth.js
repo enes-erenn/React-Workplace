@@ -1,3 +1,4 @@
+// Styles
 import styles from "./Auth.module.css";
 
 const Auth = () => {

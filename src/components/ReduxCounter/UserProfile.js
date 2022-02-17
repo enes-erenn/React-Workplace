@@ -1,3 +1,4 @@
+// Styles
 import styles from "./UserProfile.module.css";
 
 const UserProfile = () => {
