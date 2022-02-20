@@ -1,11 +1,12 @@
 .counter {
-  margin: 5rem auto;
+  margin: 0 auto;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   width: 40rem;
+  height: 30rem;
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  background-color: #f4f0fa;
+  background-color: #b0e1e9;
 }
 
 .counter h1 {

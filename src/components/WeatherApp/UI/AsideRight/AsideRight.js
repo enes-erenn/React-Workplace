@@ -8,7 +8,7 @@ function AsideRight(props) {
       <div className={styles.feelsLikes}>
         <div className={styles.feels}>
           <h3>Day:</h3>
-          <p>{props.feelsDay} °C</p>
+          <p className={styles.feelsHeaders}>{props.feelsDay} °C</p>
         </div>
         <div className={styles.feels}>
           <h3>Night:</h3>
