@@ -118,7 +118,7 @@ function App() {
             <h3 className={styles.headers}>ReduxCounter</h3>
             <img
               class={styles.imgs}
-              src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReduxCounter/ReduxCounter.png"
+              src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReduxCounter/CounterApp.png"
               alt=""
             />
           </div>
