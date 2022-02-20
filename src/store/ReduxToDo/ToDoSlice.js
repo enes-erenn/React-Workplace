@@ -3,18 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 export const ToDoSlice = createSlice({
   name: "todos",
   initialState: {
-    items: [
-      {
-        id: 1,
-        title: "Go to the GYM",
-      },
-      {
-        id: 2,
-        title: "Learn React",
-      },
-    ],
+    items: [],
   },
-  reducers: {},
+  reducers: {
+    addToDo: (state, action) => {
+      state.items.push(action.payload);
+    },
+  },
 });
-
+export const { addToDo } = ToDoSlice.actions;
 export default ToDoSlice.reducer;

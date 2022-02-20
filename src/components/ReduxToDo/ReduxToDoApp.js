@@ -1,5 +1,5 @@
 import React from "react";
-import ToDoInput from "./ToDoInput/ToDoInput.js";
+import ToDoInput from "./ToDoForm/ToDoForm.js";
 import ToDoList from "./ToDoList/ToDoList.js";
 import styles from "./ReduxToDoApp.module.css";
 import { store } from "../../store/store.js";
