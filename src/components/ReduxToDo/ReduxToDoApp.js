@@ -2,13 +2,17 @@ import React from "react";
 import ToDoInput from "./ToDoInput/ToDoInput.js";
 import ToDoList from "./ToDoList/ToDoList.js";
 import styles from "./ReduxToDoApp.module.css";
+import { store } from "../../store/store.js";
+import { Provider } from "react-redux";
 
 const ReduxToDoApp = () => {
   return (
-    <div className={styles.container}>
-      <ToDoInput />
-      <ToDoList />
-    </div>
+    <Provider store={store}>
+      <div className={styles.container}>
+        <ToDoInput />
+        <ToDoList />
+      </div>
+    </Provider>
   );
 };
 
