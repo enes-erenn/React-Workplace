@@ -9,8 +9,10 @@ const ReduxToDoApp = () => {
   return (
     <Provider store={store}>
       <div className={styles.container}>
-        <ToDoInput />
-        <ToDoList />
+        <div className={styles.todo}>
+          <ToDoInput />
+          <ToDoList />
+        </div>
       </div>
     </Provider>
   );

@@ -52,3 +52,7 @@ You may also see any lint errors in the console.
   <h4 align="center">Counter App</h4>
 
 <img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReduxCounter/CounterApp.png">
+
+  <h4 align="center">To Do App</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReduxTodoApp/ToDoApp.png">

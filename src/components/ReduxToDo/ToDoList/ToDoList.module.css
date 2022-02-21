@@ -105,3 +105,10 @@
 .clear-completed:hover {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1366px) {
+  .todo-list {
+    width: 34rem;
+    height: 24rem;
+  }
+}

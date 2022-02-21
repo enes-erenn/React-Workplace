@@ -32,3 +32,18 @@
   padding: 2rem 0 3rem 0;
   color: #eee;
 }
+
+@media only screen and (max-width: 1366px) {
+  .form {
+    height: 10rem;
+  }
+  .header {
+    padding: 2rem 0 2rem 0;
+  }
+  .input {
+    width: 26rem;
+  }
+  .form {
+    width: 34rem;
+  }
+}
