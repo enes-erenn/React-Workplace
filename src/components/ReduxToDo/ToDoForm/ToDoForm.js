@@ -19,6 +19,7 @@ const TodoInput = () => {
       <h2 className={styles.header}>To Do App</h2>
       <div>
         <input
+          completed="false"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           className={styles.input}
