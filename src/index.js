@@ -14,6 +14,7 @@ import ReduxCounterApp from "./components/ReduxCounter/ReduxCounterApp.js";
 import { Provider } from "react-redux";
 import store from "./store/index.js";
 import ReduxToDo from "./components/ReduxToDo/ReduxToDoApp.js";
+import ReduxNotes from "./components/NotesApp/NotesApp.js";
 
 render(
   <Provider store={store}>
@@ -29,6 +30,7 @@ render(
         <Route path="formapp" element={<FormApp />} />
         <Route path="reduxcounter" element={<ReduxCounterApp />} />
         <Route path="reduxtodo" element={<ReduxToDo />} />
+        <Route path="reduxnotes" element={<ReduxNotes />} />
       </Routes>
     </BrowserRouter>
   </Provider>,

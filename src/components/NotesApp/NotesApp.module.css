@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffe8d6;
+}
+
+.header {
+  text-align: center;
+  padding: 5% 0 2% 0;
+  color: #14213d;
+}
