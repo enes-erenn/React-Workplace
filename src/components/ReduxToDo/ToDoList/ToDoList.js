@@ -6,6 +6,9 @@ import {
   remove,
   changeActiveFilter,
   clearCompleted,
+  selectTodos,
+  selectFilteredTodos,
+  selectActiveFilter,
 } from "../../../store/ReduxToDo/ToDoSlice.js";
 
 const ToDoList = () => {
@@ -15,22 +18,15 @@ const ToDoList = () => {
     }
   };
   const dispatch = useDispatch();
-  const items = useSelector((state) => state.todos.items);
-  const activeFilter = useSelector((state) => state.todos.activeFilter);
+  const items = useSelector(selectTodos);
+  const activeFilter = useSelector(selectActiveFilter);
   const itemsLeft = items.filter((item) => !item.completed).length;
-  let filtered = items;
 
-  if (activeFilter !== "all") {
-    filtered = items.filter((todo) =>
-      activeFilter === "active"
-        ? todo.completed === false
-        : todo.completed === true
-    );
-  }
+  const filteredTodos = useSelector(selectFilteredTodos);
   return (
     <section className={styles.main}>
       <ul className={styles["todo-list"]}>
-        {filtered.map((item) => (
+        {filteredTodos.map((item) => (
           <li key={item.id} className={item.completed ? "completed" : "list"}>
             <div className={styles.view}>
               <input
