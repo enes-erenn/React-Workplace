@@ -60,3 +60,7 @@ You may also see any lint errors in the console.
   <h4 align="center">To Do App</h4>
 
 <img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReduxToDoApp/ToDoApp.png">
+
+  <h4 align="center">Notes App</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/NotesApp/NotesApp.png">
