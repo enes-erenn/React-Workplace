@@ -27,7 +27,12 @@ const ToDoList = () => {
     <section className={styles.main}>
       <ul className={styles["todo-list"]}>
         {filteredTodos.map((item) => (
-          <li key={item.id} className={item.completed ? "completed" : "list"}>
+          <li
+            key={item.id}
+            className={
+              item.completed ? `${styles.completed}` : `${styles.list}`
+            }
+          >
             <div className={styles.view}>
               <input
                 className={styles.toggle}
@@ -54,35 +59,33 @@ const ToDoList = () => {
 
         <ul className={styles.filters}>
           <li>
-            <a
+            <button
               href="#/"
               className={activeFilter === "all" ? "selected" : ""}
               onClick={() => dispatch(changeActiveFilter("all"))}
             >
               All
-            </a>
+            </button>
           </li>
           <li>
-            <a
+            <button
               href="#/"
               className={activeFilter === "active" ? "selected" : ""}
               onClick={() => dispatch(changeActiveFilter("active"))}
             >
               Active
-            </a>
+            </button>
           </li>
           <li>
-            <a
+            <button
               href="#/"
               className={activeFilter === "completed" ? "selected" : ""}
               onClick={() => dispatch(changeActiveFilter("completed"))}
             >
               Completed
-            </a>
+            </button>
           </li>
         </ul>
-        <input className={styles["toggle-all"]} type="checkbox" />
-        <label htmlFor="toggle-all">Mark all as complete</label>
 
         <button
           className={styles["clear-completed"]}

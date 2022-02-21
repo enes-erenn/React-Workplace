@@ -11,14 +11,17 @@
 }
 
 .add {
+  width: 3rem;
   padding: 10px;
   border-radius: 0 4px 4px 0;
   border: 1px solid gray;
 }
-
+.add:hover {
+  cursor: pointer;
+}
 .input {
   padding: 10px;
-  width: 24rem;
+  width: 29rem;
   border-radius: 4px 0 0 4px;
   border: 1px solid gray;
 }

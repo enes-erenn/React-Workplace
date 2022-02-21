@@ -10,9 +10,12 @@ const TodoInput = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(addToDo({ title }));
-    setTitle("");
+    if (title.trim().length > 0) {
+      dispatch(addToDo({ title }));
+      setTitle("");
+    }
   };
+
   return (
     <form className={styles.form} onSubmit={submitHandler}>
       <h2 className={styles.header}>To Do App</h2>
@@ -23,6 +26,7 @@ const TodoInput = () => {
           onChange={(e) => setTitle(e.target.value)}
           className={styles.input}
           type="text"
+          placeholder="Add a to do"
         />
         <button className={styles.add} type="submit">
           Add
