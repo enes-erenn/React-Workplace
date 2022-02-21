@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { nanoid } from "@reduxjs/toolkit";
 
 export const ToDoSlice = createSlice({
   name: "todos",
@@ -7,8 +8,19 @@ export const ToDoSlice = createSlice({
     activeFilter: "all",
   },
   reducers: {
-    addToDo: (state, action) => {
-      state.items.push(action.payload);
+    addToDo: {
+      reducer: (state, action) => {
+        state.items.push(action.payload);
+      },
+      prepare: ({ title }) => {
+        return {
+          payload: {
+            id: nanoid(),
+            completed: false,
+            title,
+          },
+        };
+      },
     },
     toggle: (state, action) => {
       const { id } = action.payload;

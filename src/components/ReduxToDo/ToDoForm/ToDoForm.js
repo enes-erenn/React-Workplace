@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./ToDoForm.module.css";
 import { useDispatch } from "react-redux";
 import { addToDo } from "../../../store/ReduxToDo/ToDoSlice.js";
-import { nanoid } from "@reduxjs/toolkit";
 
 const TodoInput = () => {
   const [title, setTitle] = useState("");
@@ -11,7 +10,7 @@ const TodoInput = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(addToDo({ id: nanoid(), title, completed: false }));
+    dispatch(addToDo({ title }));
     setTitle("");
   };
   return (
