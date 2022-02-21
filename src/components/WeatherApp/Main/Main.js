@@ -22,9 +22,11 @@ function Main() {
   }
 
   return (
-    <main>
+    <main className={styles.main}>
       <form className={styles.inputContainer} onSubmit={citySubmitHandler}>
-        <label htmlFor="search">Search a city:</label>
+        <label className={styles.header} htmlFor="search">
+          Search a city:
+        </label>
         <input
           type="text"
           id="input"
