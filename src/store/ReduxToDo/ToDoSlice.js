@@ -4,6 +4,7 @@ export const ToDoSlice = createSlice({
   name: "todos",
   initialState: {
     items: [],
+    activeFilter: "all",
   },
   reducers: {
     addToDo: (state, action) => {
@@ -19,7 +20,15 @@ export const ToDoSlice = createSlice({
       const filtered = state.items.filter((item) => item.id !== id);
       state.items = filtered;
     },
+    changeActiveFilter: (state, action) => {
+      state.activeFilter = action.payload;
+    },
+    clearCompleted: (state) => {
+      const filtered = state.items.filter((item) => item.completed === false);
+      state.items = filtered;
+    },
   },
 });
-export const { addToDo, toggle, remove } = ToDoSlice.actions;
+export const { addToDo, toggle, remove, changeActiveFilter, clearCompleted } =
+  ToDoSlice.actions;
 export default ToDoSlice.reducer;
