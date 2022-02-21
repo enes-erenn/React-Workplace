@@ -6,10 +6,12 @@ import { useDispatch } from "react-redux";
 
 const NotesForm = () => {
   const [note, setNote] = useState("");
+  const [color, setColor] = useState("");
   const dispatch = useDispatch();
+
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(addNote({ note }));
+    dispatch(addNote({ note, color }));
     setNote("");
   };
 
@@ -21,14 +23,30 @@ const NotesForm = () => {
         placeholder="Enter your note here..."
         value={note}
         onChange={(e) => setNote(e.target.value)}
+        required={true}
       ></textarea>
       <div className={styles.controls}>
         <div className={styles.colors}>
-          <button className={styles.color}></button>
-          <button className={styles.color}></button>
-          <button className={styles.color}></button>
-          <button className={styles.color}></button>
-          <button className={styles.color}></button>
+          <div
+            className={styles.color}
+            onClick={() => setColor("#9e0059")}
+          ></div>
+          <div
+            className={styles.color}
+            onClick={() => setColor("#ff5d8f")}
+          ></div>
+          <div
+            className={styles.color}
+            onClick={() => setColor("#ffbd00")}
+          ></div>
+          <div
+            className={styles.color}
+            onClick={() => setColor("#83c5be")}
+          ></div>
+          <div
+            className={styles.color}
+            onClick={() => setColor("#a3b18a")}
+          ></div>
         </div>
         <button className={styles.add}>ADD</button>
       </div>
