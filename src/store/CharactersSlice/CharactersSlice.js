@@ -29,7 +29,7 @@ export const CharactersSlice = createSlice({
     },
     [fetchCharacters.fulfilled]: (state, action) => {
       state.items = [...state.items, ...action.payload];
-      state.status = "succed";
+      state.status = "succeed";
       state.page += 1;
       if (action.payload.length < 12) {
         state.hasNextPage = false;

@@ -3,6 +3,7 @@ import ToDoSlice from "./ReduxToDo/ToDoSlice.js";
 import NotesSlice from "./ReduxNotes/NotesSlice.js";
 import CharactersSlice from "./CharactersSlice/CharactersSlice.js";
 import CounterSlice from "./CounterSlice/CounterSlice.js";
+import QuotesSlice from "./QuotesSlice/QuotesSlice.js";
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     counter: CounterSlice,
     notes: NotesSlice,
     characters: CharactersSlice,
+    quotes: QuotesSlice,
   },
 });
 export default store;

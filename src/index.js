@@ -17,6 +17,7 @@ import ReduxToDo from "./components/ReduxToDo/ReduxToDoApp.js";
 import ReduxNotes from "./components/NotesApp/NotesApp.js";
 import BreakingBadCharacters from "./components/BreakingBadCharacters/pages/Home/BreakingBadApp.js";
 import Detail from "./components/BreakingBadCharacters/pages/Details/CharDetails.js";
+import Quotes from "./components/BreakingBadCharacters/pages/Quotes/BreakingBadQuotes.js";
 
 render(
   <Provider store={store}>
@@ -38,6 +39,7 @@ render(
           element={<BreakingBadCharacters />}
         />
         <Route path="/char/:char_id" element={<Detail />} />
+        <Route path="/breakingbadcharacters/quotes" element={<Quotes />} />
       </Routes>
     </BrowserRouter>
   </Provider>,
