@@ -6,6 +6,8 @@ import styles from "./BreakingBadApp.module.css";
 const Home = () => {
   const characters = useSelector((state) => state.characters.items);
   const isLoading = useSelector((state) => state.characters.isLoading);
+  const nextPage = useSelector((state) => state.characters.page);
+  const hasNextPage = useSelector((state) => state.characters.hasNextPage);
   const error = useSelector((state) => state.characters.error);
   const dispatch = useDispatch();
 
@@ -13,9 +15,6 @@ const Home = () => {
     dispatch(fetchCharacters());
   }, [dispatch]);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
   if (error) {
     return <div>{error}</div>;
   }
@@ -35,6 +34,12 @@ const Home = () => {
           </div>
         ))}
       </div>
+      {isLoading && <p>Loading...</p>}
+      {hasNextPage && !isLoading && (
+        <button onClick={() => dispatch(fetchCharacters(nextPage))}>
+          Load More ({nextPage})
+        </button>
+      )}
     </div>
   );
 };
