@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import {
   fetchAllQuotes,
   statusSelector,
   errorSelector,
   quotesSelector,
 } from "../../../../store/QuotesSlice/QuotesSlice";
+
+import styles from "./BreakingBadQuotes.module.css";
 
 const BreakingBadQuotes = () => {
   const dispatch = useDispatch();
@@ -23,10 +26,28 @@ const BreakingBadQuotes = () => {
     return <div>{error}</div>;
   }
   return (
-    <div>
+    <div className={styles.container}>
+      <nav className={styles.nav}>
+        <ul className={styles.links}>
+          <li className={styles.header}>Breaking Bad</li>
+          <div className={styles.pages}>
+            <li className={styles.link}>
+              <Link className={styles.link} to="/breakingbadcharacters">
+                Characters
+              </Link>
+            </li>
+            <li className={styles.link}>
+              <Link className={styles.link} to="/breakingbadcharacters/quotes">
+                Quotes
+              </Link>
+            </li>
+          </div>
+        </ul>
+      </nav>
       <h1>Quotes</h1>
       {status === "loading" && <p>Loading...</p>}
-      {status === "succeed" && quotes.map((item) => <div>{item.quote}</div>)}
+      {status === "succeed" &&
+        quotes.map((item) => <div className={styles.quotes}>{item.quote}</div>)}
     </div>
   );
 };
