@@ -3,7 +3,7 @@
 .App {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
@@ -28,7 +28,7 @@
   height: 14rem;
 }
 .header {
-  padding: 2% 0 1% 0;
+  padding: 3% 0 2% 0;
   color: #fff;
 }
 a {

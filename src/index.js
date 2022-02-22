@@ -18,6 +18,7 @@ import ReduxNotes from "./components/NotesApp/NotesApp.js";
 import BreakingBadCharacters from "./components/BreakingBadCharacters/pages/Home/BreakingBadApp.js";
 import Detail from "./components/BreakingBadCharacters/pages/Details/CharDetails.js";
 import Quotes from "./components/BreakingBadCharacters/pages/Quotes/BreakingBadQuotes.js";
+import SpendMoney from "./components/SpendMoneyApp/SpendMoneyApp.js";
 
 render(
   <Provider store={store}>
@@ -34,6 +35,7 @@ render(
         <Route path="reduxcounter" element={<ReduxCounterApp />} />
         <Route path="reduxtodo" element={<ReduxToDo />} />
         <Route path="reduxnotes" element={<ReduxNotes />} />
+        <Route path="spendmoney" element={<SpendMoney />} />
         <Route
           path="breakingbadcharacters"
           element={<BreakingBadCharacters />}

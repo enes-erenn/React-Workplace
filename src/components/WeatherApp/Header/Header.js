@@ -3,8 +3,8 @@ import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <header>
-      <nav>
+    <header className={styles.header}>
+      <nav className={styles.nav}>
         <h2 id={styles.logo}>
           Ho
           <span id={styles.weather}>
