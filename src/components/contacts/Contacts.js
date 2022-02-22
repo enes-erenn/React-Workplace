@@ -2,6 +2,7 @@ import { useState } from "react";
 import List from "./List/ContactList";
 import Form from "./Form/ContactForm";
 import styles from "./contacts.module.css";
+import Button from "../Button/Button.js";
 
 export default function Contacts() {
   const [contacts, setContacts] = useState([
@@ -33,6 +34,7 @@ export default function Contacts() {
         <Form addContact={setContacts} contacts={contacts} />
         <List contacts={contacts} />
       </div>
+      <Button />
     </div>
   );
 }

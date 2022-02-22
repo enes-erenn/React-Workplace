@@ -4,6 +4,7 @@ import NotesForm from "./NotesForm/NotesForm.js";
 import NotesList from "./NotesList/NotesList.js";
 import { store } from "../../store/store.js";
 import { Provider } from "react-redux";
+import Button from "../Button/Button.js";
 
 const NotesApp = () => {
   return (
@@ -13,6 +14,7 @@ const NotesApp = () => {
 
         <NotesForm />
         <NotesList />
+        <Button />
       </div>
     </Provider>
   );

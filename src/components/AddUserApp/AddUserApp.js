@@ -3,6 +3,7 @@ import styles from "./AddUserApp.module.css";
 // Components
 import UserForm from "./Users/UserForm.js";
 import UsersList from "./Users/UsersList.js";
+import Button from "../Button/Button.js";
 // Packages
 import { useState } from "react";
 
@@ -21,6 +22,7 @@ function AddUserApp() {
     <div className={styles.container}>
       <UserForm onAddUser={addUserHandler} />
       <UsersList users={usersList} />
+      <Button />
     </div>
   );
 }

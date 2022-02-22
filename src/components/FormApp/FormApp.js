@@ -1,5 +1,6 @@
 // Components
 import BasicForm from "./Form/BasicForm.js";
+import Button from "../Button/Button.js";
 // Styles
 import styles from "./FormApp.module.css";
 
@@ -9,6 +10,7 @@ function App() {
       <div className={styles.app}>
         <BasicForm />
       </div>
+      <Button />
     </div>
   );
 }

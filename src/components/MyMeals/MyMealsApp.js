@@ -5,6 +5,7 @@ import Header from "./Layout/Header.js";
 import Meals from "./Meals/Meals.js";
 import Cart from "./Cart/Cart.js";
 import CartProvider from "./store/CartProvider.js";
+import Button from "../Button/Button.js";
 
 const MyMealsApp = () => {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -22,6 +23,7 @@ const MyMealsApp = () => {
       <Header onShowCart={showCartHandler} onHideCart={hideCartHandler} />
       <main>
         <Meals />
+        <Button />
       </main>
     </CartProvider>
   );

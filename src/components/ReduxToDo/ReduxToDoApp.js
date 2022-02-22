@@ -4,6 +4,7 @@ import ToDoList from "./ToDoList/ToDoList.js";
 import styles from "./ReduxToDoApp.module.css";
 import { store } from "../../store/store.js";
 import { Provider } from "react-redux";
+import Button from "../Button/Button.js";
 
 const ReduxToDoApp = () => {
   return (
@@ -13,6 +14,7 @@ const ReduxToDoApp = () => {
           <ToDoInput />
           <ToDoList />
         </div>
+        <Button />
       </div>
     </Provider>
   );

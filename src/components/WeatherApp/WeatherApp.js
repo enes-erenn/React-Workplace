@@ -4,6 +4,7 @@ import styles from "./WeatherApp.module.css";
 import Header from "./Header/Header.js";
 import Main from "./Main/Main.js";
 import Wrapper from "./Wrapper/Wrapper.js";
+import Button from "../Button/Button.js";
 
 function WeatherApp() {
   return (
@@ -11,6 +12,7 @@ function WeatherApp() {
       <Header />
       <Main />
       <Wrapper />
+      <Button />
     </div>
   );
 }

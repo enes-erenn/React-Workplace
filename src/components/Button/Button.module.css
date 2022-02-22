@@ -1,0 +1,17 @@
+.button {
+  width: 2.4rem;
+  height: 2rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  color: black;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}

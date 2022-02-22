@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchCharacters } from "../../../../store/CharactersSlice/CharactersSlice.js";
 import styles from "./BreakingBadApp.module.css";
 import { Link } from "react-router-dom";
+import Button from "../../../Button/Button.js";
 
 const Home = () => {
   const characters = useSelector((state) => state.characters.items);
@@ -64,6 +65,7 @@ const Home = () => {
           Load More
         </button>
       )}
+      <Button />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import styles from "./ExpensesApp.module.css";
 // Components
 import Expenses from "./Expenses.js";
 import NewExpense from "./NewExpense/NewExpense.js";
+import Button from "../Button/Button.js";
 
 const INITIAL_EXPENSES = [
   {
@@ -46,6 +47,7 @@ function ExpensesApp() {
     <div className={styles.container}>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
+      <Button />
     </div>
   );
 }
