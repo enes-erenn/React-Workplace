@@ -152,9 +152,9 @@ function App() {
       </article>
 
       <article className={styles.pages}>
-        <Link to="" onClick={errorHandler}>
+        <Link to="breakingbadcharacters">
           <div className={styles.works}>
-            <h3 className={styles.headers}>10</h3>
+            <h3 className={styles.headers}>Breaking Bad Characters</h3>
             <img
               class={styles.imgs}
               src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"

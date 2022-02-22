@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./NotesApp.module.css";
 import NotesForm from "./NotesForm/NotesForm.js";
 import NotesList from "./NotesList/NotesList.js";
-import { store } from "../../store/ReduxNotes/store.js";
+import { store } from "../../store/store.js";
 import { Provider } from "react-redux";
 
 const NotesApp = () => {

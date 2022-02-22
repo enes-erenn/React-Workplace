@@ -6,7 +6,7 @@ const NotesList = () => {
   const [filter, setFilter] = useState("");
   const items = useSelector((state) => state.notes.items);
   const filtered = useSelector((state) =>
-    state.notes.items.filter((item) =>
+   items.filter((item) =>
       item.note.toLowerCase().includes(filter.toLowerCase())
     )
   );

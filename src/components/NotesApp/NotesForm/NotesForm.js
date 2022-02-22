@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NotesForm.module.css";
-import { addNote } from "../../../store/ReduxNotes/ReduxNotes/NotesSlice.js";
+import { addNote } from "../../../store/ReduxNotes/NotesSlice.js";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
@@ -11,8 +11,11 @@ const NotesForm = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(addNote({ note, color }));
-    setNote("");
+    if (color) {
+      dispatch(addNote({ note, color }));
+      return setNote("");
+    }
+    alert("Please pick a color");
   };
 
   return (

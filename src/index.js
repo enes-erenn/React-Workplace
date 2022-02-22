@@ -12,9 +12,10 @@ import MyMealsApp from "./components/MyMeals/MyMealsApp.js";
 import FormApp from "./components/FormApp/FormApp.js";
 import ReduxCounterApp from "./components/ReduxCounter/ReduxCounterApp.js";
 import { Provider } from "react-redux";
-import store from "./store/index.js";
+import store from "./store/store.js";
 import ReduxToDo from "./components/ReduxToDo/ReduxToDoApp.js";
 import ReduxNotes from "./components/NotesApp/NotesApp.js";
+import BreakingBadCharacters from "./components/BreakingBadCharacters/pages/Home/BreakingBadApp.js";
 
 render(
   <Provider store={store}>
@@ -31,6 +32,10 @@ render(
         <Route path="reduxcounter" element={<ReduxCounterApp />} />
         <Route path="reduxtodo" element={<ReduxToDo />} />
         <Route path="reduxnotes" element={<ReduxNotes />} />
+        <Route
+          path="breakingbadcharacters"
+          element={<BreakingBadCharacters />}
+        />
       </Routes>
     </BrowserRouter>
   </Provider>,
