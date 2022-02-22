@@ -16,12 +16,13 @@ import store from "./store/store.js";
 import ReduxToDo from "./components/ReduxToDo/ReduxToDoApp.js";
 import ReduxNotes from "./components/NotesApp/NotesApp.js";
 import BreakingBadCharacters from "./components/BreakingBadCharacters/pages/Home/BreakingBadApp.js";
+import Detail from "./components/BreakingBadCharacters/pages/Details/CharDetails.js";
 
 render(
   <Provider store={store}>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route exact path="/" element={<App />} />
         <Route path="contacts" element={<Contacts />} />
         <Route path="expensesapp" element={<ExpensesApp />} />
         <Route path="weatherapp" element={<WeatherApp />} />
@@ -36,6 +37,7 @@ render(
           path="breakingbadcharacters"
           element={<BreakingBadCharacters />}
         />
+        <Route path="/char/:char_id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
   </Provider>,
