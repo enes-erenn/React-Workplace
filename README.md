@@ -10,6 +10,8 @@ Welcome to the my "React Workplace". In this repository, you'll find some apps t
 - Form App
 - Counter App
 - To Do App
+- Notes App
+- Breaking Bad App
 
 It is enough to run this "react app" to reach all of the apps upper.
 
@@ -64,3 +66,7 @@ You may also see any lint errors in the console.
   <h4 align="center">Notes App</h4>
 
 <img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/NotesApp/NotesApp.png">
+
+  <h4 align="center">Breaking Bad App</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/BreakingBadApp/BreakingBadApp.png">
