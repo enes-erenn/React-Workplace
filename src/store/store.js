@@ -5,6 +5,8 @@ import CharactersSlice from "./CharactersSlice/CharactersSlice.js";
 import CounterSlice from "./CounterSlice/CounterSlice.js";
 import QuotesSlice from "./QuotesSlice/QuotesSlice.js";
 import SpendMoneySlice from "./SpendMoneySlice/SpendMoneySlice.js";
+import uiSlice from "./ReduxCartSlices/ui-slice.js";
+import CartSlice from "./ReduxCartSlices/cart-slice.js";
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +16,8 @@ export const store = configureStore({
     characters: CharactersSlice,
     quotes: QuotesSlice,
     items: SpendMoneySlice,
+    ui: uiSlice,
+    cart: CartSlice,
   },
 });
 export default store;
