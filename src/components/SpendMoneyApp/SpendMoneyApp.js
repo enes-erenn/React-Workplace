@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./SpendMoneyApp.module.css";
+import { useSelector, useDispatch } from "react-redux";
+import { buy, sell } from "../../store/SpendMoneySlice/SpendMoneySlice.js";
 
 const SpendMoneyApp = () => {
+  const items = useSelector((state) => state.items.items);
+  const budget = useSelector((state) => state.items.budget);
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.container}>
       <div className={styles.app}>
@@ -12,123 +18,37 @@ const SpendMoneyApp = () => {
             alt=""
           />
           <h1 className={styles.heading}>Spend Bill Gates' Money</h1>
-          <p className={styles.money}>$100,000,000,000</p>
+          <p className={styles.money}>{`$${new Intl.NumberFormat(
+            "en-US"
+          ).format(budget)}`}</p>
         </header>
         <div className={styles.items}>
-          <div className={styles.item}>
-            <div>
-              <img
-                className={styles.img}
-                src="https://neal.fun/spend/images/big-mac.jpg"
-                alt=""
-              />
-              <h6 className={styles.title}>Big Mac</h6>
-              <p className={styles.price}>$2</p>
+          {items.map((item) => (
+            <div className={styles.item} key={item.price}>
+              <div>
+                <img className={styles.img} src={item.img} alt="" />
+                <h6 className={styles.title}>{item.title}</h6>
+                <p className={styles.price}>{`$${new Intl.NumberFormat(
+                  "en-US"
+                ).format(item.price)}`}</p>
+              </div>
+              <div className={styles.controls}>
+                <button
+                  className={`${styles.button} ${styles.sell}`}
+                  onClick={() => dispatch(sell(item.price))}
+                >
+                  Sell
+                </button>
+                <input className={styles.count} type="number"></input>
+                <button
+                  className={`${styles.button} ${styles.buy}`}
+                  onClick={() => dispatch(buy(item.price))}
+                >
+                  Buy
+                </button>
+              </div>
             </div>
-
-            <div className={styles.controls}>
-              <button className={`${styles.button} ${styles.sell}`}>
-                Sell
-              </button>
-              <input className={styles.count} type="number"></input>
-              <button className={`${styles.button} ${styles.buy}`}>Buy</button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <div>
-              <img
-                className={styles.img}
-                src="https://neal.fun/spend/images/big-mac.jpg"
-                alt=""
-              />
-              <h6 className={styles.title}>Big Mac</h6>
-              <p className={styles.price}>$2</p>
-            </div>
-
-            <div className={styles.controls}>
-              <button className={`${styles.button} ${styles.sell}`}>
-                Sell
-              </button>
-              <input className={styles.count} type="number"></input>
-              <button className={`${styles.button} ${styles.buy}`}>Buy</button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <div>
-              <img
-                className={styles.img}
-                src="https://neal.fun/spend/images/big-mac.jpg"
-                alt=""
-              />
-              <h6 className={styles.title}>Big Mac</h6>
-              <p className={styles.price}>$2</p>
-            </div>
-
-            <div className={styles.controls}>
-              <button className={`${styles.button} ${styles.sell}`}>
-                Sell
-              </button>
-              <input className={styles.count} type="number"></input>
-              <button className={`${styles.button} ${styles.buy}`}>Buy</button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <div>
-              <img
-                className={styles.img}
-                src="https://neal.fun/spend/images/big-mac.jpg"
-                alt=""
-              />
-              <h6 className={styles.title}>Big Mac</h6>
-              <p className={styles.price}>$2</p>
-            </div>
-
-            <div className={styles.controls}>
-              <button className={`${styles.button} ${styles.sell}`}>
-                Sell
-              </button>
-              <input className={styles.count} type="number"></input>
-              <button className={`${styles.button} ${styles.buy}`}>Buy</button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <div>
-              <img
-                className={styles.img}
-                src="https://neal.fun/spend/images/big-mac.jpg"
-                alt=""
-              />
-              <h6 className={styles.title}>Big Mac</h6>
-              <p className={styles.price}>$2</p>
-            </div>
-
-            <div className={styles.controls}>
-              <button className={`${styles.button} ${styles.sell}`}>
-                Sell
-              </button>
-              <input className={styles.count} type="number"></input>
-              <button className={`${styles.button} ${styles.buy}`}>Buy</button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <div>
-              <img
-                className={styles.img}
-                src="https://neal.fun/spend/images/big-mac.jpg"
-                alt=""
-              />
-              <h6 className={styles.title}>Big Mac</h6>
-              <p className={styles.price}>$2</p>
-            </div>
-
-            <div className={styles.controls}>
-              <button className={`${styles.button} ${styles.sell}`}>
-                Sell
-              </button>
-              <input className={styles.count} type="number"></input>
-              <button className={`${styles.button} ${styles.buy}`}>Buy</button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
