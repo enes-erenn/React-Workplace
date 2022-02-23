@@ -1,0 +1,44 @@
+.item h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.item header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.price {
+  border-radius: 30px;
+  padding: 0.15rem 1.5rem;
+  background-color: #3a3a3a;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.item p {
+  color: #3a3a3a;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #1a8ed1;
+  border: 1px solid #1a8ed1;
+}
+
+.button:hover,
+.button:active {
+  background-color: #1ac5d1;
+  border-color: #1ac5d1;
+  color: white;
+}

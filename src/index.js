@@ -19,6 +19,7 @@ import BreakingBadCharacters from "./components/BreakingBadCharacters/pages/Home
 import Detail from "./components/BreakingBadCharacters/pages/Details/CharDetails.js";
 import Quotes from "./components/BreakingBadCharacters/pages/Quotes/BreakingBadQuotes.js";
 import SpendMoney from "./components/SpendMoneyApp/SpendMoneyApp.js";
+import ReduxCart from "./components/ReduxCart/ReduxCartApp.js";
 
 render(
   <Provider store={store}>
@@ -36,6 +37,7 @@ render(
         <Route path="reduxtodo" element={<ReduxToDo />} />
         <Route path="reduxnotes" element={<ReduxNotes />} />
         <Route path="spendmoney" element={<SpendMoney />} />
+        <Route path="reduxcart" element={<ReduxCart />} />
         <Route
           path="breakingbadcharacters"
           element={<BreakingBadCharacters />}
