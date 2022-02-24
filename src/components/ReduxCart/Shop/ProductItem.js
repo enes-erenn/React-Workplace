@@ -1,19 +1,55 @@
+import { useDispatch, useSelector } from "react-redux";
+
+import { cartActions } from "../../../store/ReduxCartSlices/cart-slice.js";
 import Card from "../UI/Card";
 import styles from "./ProductItem.module.css";
-import { useDispatch } from "react-redux";
-import { cartActions } from "../../../store/ReduxCartSlices/cart-slice.js";
 
 const ProductItem = (props) => {
+  const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
   const { title, price, description, id } = props;
+
   const addToCartHandler = () => {
-    dispatch(
-      cartActions.addItemToCart({
-        id,
-        title,
-        price,
-      })
-    );
+    const newTotalQuantity = cart.totalQuantity + 1;
+
+    const updatedItems = cart.items.slice(); // create copy via slice to avoid mutating original state
+    const existingItem = updatedItems.find((item) => item.id === id);
+    if (existingItem) {
+      const updatedItem = { ...existingItem }; // new object + copy existing properties to avoid state mutation
+      updatedItem.quantity++;
+      updatedItem.totalPrice = updatedItem.totalPrice + price;
+      const existingItemIndex = updatedItems.findIndex(
+        (item) => item.id === id
+      );
+      updatedItems[existingItemIndex] = updatedItem;
+    } else {
+      updatedItems.push({
+        id: id,
+        price: price,
+        quantity: 1,
+        totalPrice: price,
+        name: title,
+      });
+    }
+
+    const newCart = {
+      totalQuantity: newTotalQuantity,
+      items: updatedItems,
+    };
+
+    dispatch(cartActions.replaceCart(newCart));
+
+    // and then send Http request
+    // fetch('firebase-url', { method: 'POST', body: JSON.stringify(newCart) })
+
+    // dispatch(
+    //   cartActions.addItemToCart({
+    //     id,
+    //     title,
+    //     price,
+    //   })
+    // );
   };
 
   return (
@@ -25,7 +61,7 @@ const ProductItem = (props) => {
         </header>
         <p>{description}</p>
         <div className={styles.actions}>
-          <button onClick={addToCartHandler} className={styles.button}>
+          <button className={styles.button} onClick={addToCartHandler}>
             Add to Cart
           </button>
         </div>
