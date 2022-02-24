@@ -20,6 +20,7 @@ import Detail from "./components/BreakingBadCharacters/pages/Details/CharDetails
 import Quotes from "./components/BreakingBadCharacters/pages/Quotes/BreakingBadQuotes.js";
 import SpendMoney from "./components/SpendMoneyApp/SpendMoneyApp.js";
 import ReduxCart from "./components/ReduxCart/ReduxCartApp.js";
+import MemoryGame from "./components/MemoryGame/MemoryGameApp.js";
 
 render(
   <Provider store={store}>
@@ -38,6 +39,7 @@ render(
         <Route path="reduxnotes" element={<ReduxNotes />} />
         <Route path="spendmoney" element={<SpendMoney />} />
         <Route path="reduxcart" element={<ReduxCart />} />
+        <Route path="memorygame" element={<MemoryGame />} />
         <Route
           path="breakingbadcharacters"
           element={<BreakingBadCharacters />}

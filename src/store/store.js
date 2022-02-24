@@ -7,6 +7,7 @@ import QuotesSlice from "./QuotesSlice/QuotesSlice.js";
 import SpendMoneySlice from "./SpendMoneySlice/SpendMoneySlice.js";
 import uiSlice from "./ReduxCartSlices/ui-slice.js";
 import CartSlice from "./ReduxCartSlices/cart-slice.js";
+import MemoryGameSlice from "./MemoryGameSlice/MemoryGameSlice.js";
 
 export const store = configureStore({
   reducer: {
@@ -18,6 +19,7 @@ export const store = configureStore({
     items: SpendMoneySlice,
     ui: uiSlice,
     cart: CartSlice,
+    cards: MemoryGameSlice,
   },
 });
 export default store;
