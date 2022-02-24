@@ -8,11 +8,11 @@
   background-color: #252424;
 }
 
-.header h1 {
+.title {
   color: white;
 }
 
-.header ul {
+.list {
   list-style: none;
   margin: 0;
   padding: 0;

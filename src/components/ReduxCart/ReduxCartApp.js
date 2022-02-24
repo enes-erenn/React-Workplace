@@ -1,13 +1,16 @@
+// Packages and Dependencies
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+// Components
 import Cart from ".//Cart/Cart";
 import Layout from ".//Layout/Layout";
 import Products from ".//Shop/Products";
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
 import Notification from "./UI/Notification.js";
 import {
   sendCartData,
   fetchCartData,
 } from "../../store/ReduxCartSlices/cart-actions.js";
+
 let isInitial = true;
 
 function App() {

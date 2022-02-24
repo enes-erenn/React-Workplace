@@ -9,8 +9,8 @@
   color: white;
 }
 
-.notification h2,
-.notification p {
+.header,
+.message {
   font-size: 1rem;
   margin: 0;
 }

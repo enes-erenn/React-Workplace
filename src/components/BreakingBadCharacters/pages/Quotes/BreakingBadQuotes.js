@@ -1,13 +1,15 @@
+// Packages and Dependencies
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+// Components
 import {
   fetchAllQuotes,
   statusSelector,
   errorSelector,
   quotesSelector,
 } from "../../../../store/QuotesSlice/QuotesSlice";
-
+// Styles
 import styles from "./BreakingBadQuotes.module.css";
 
 const BreakingBadQuotes = () => {

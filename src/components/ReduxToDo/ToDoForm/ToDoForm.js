@@ -1,6 +1,9 @@
+// Packages and Dependencies
 import { useState } from "react";
-import styles from "./ToDoForm.module.css";
 import { useDispatch } from "react-redux";
+// Styles
+import styles from "./ToDoForm.module.css";
+// Components
 import { addToDo } from "../../../store/ReduxToDo/ToDoSlice.js";
 
 const TodoInput = () => {

@@ -1,3 +1,4 @@
+// Styles
 import styles from "./Notification.module.css";
 
 const Notification = (props) => {
@@ -14,8 +15,8 @@ const Notification = (props) => {
 
   return (
     <section className={cssClasses}>
-      <h2>{props.title}</h2>
-      <p>{props.message}</p>
+      <h2 className={styles.header}>{props.title}</h2>
+      <p className={styles.message}>{props.message}</p>
     </section>
   );
 };

@@ -1,6 +1,8 @@
-import React from "react";
-import styles from "./ToDoList.module.css";
+// Packages and Dependencies
 import { useSelector, useDispatch } from "react-redux";
+// Styles
+import styles from "./ToDoList.module.css";
+// Components
 import {
   toggle,
   remove,

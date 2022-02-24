@@ -4,12 +4,12 @@
   padding: 1rem;
 }
 
-.item h3 {
+.title {
   margin: 0 0 0.5rem 0;
   font-size: 1.75rem;
 }
 
-.item header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-.quantity span {
+.amount {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -43,7 +43,7 @@
   margin: 0.5rem 0;
 }
 
-.actions button {
+.button {
   background-color: transparent;
   border: 1px solid white;
   margin-left: 0.5rem;
@@ -51,8 +51,8 @@
   color: white;
 }
 
-.actions button:hover,
-.actions button:active {
+.button:hover,
+.button:active {
   background-color: #4b4b4b;
   color: white;
 }

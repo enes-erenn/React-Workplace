@@ -1,5 +1,8 @@
-import styles from "./CartItem.module.css";
+// Packages and Dependencies
 import { useDispatch } from "react-redux";
+// Styles
+import styles from "./CartItem.module.css";
+// Components
 import { cartActions } from "../../../store/ReduxCartSlices/cart-slice.js";
 
 const CartItem = (props) => {
@@ -20,8 +23,8 @@ const CartItem = (props) => {
 
   return (
     <li className={styles.item}>
-      <header>
-        <h3>{title}</h3>
+      <header className={styles.header}>
+        <h3 className={styles.title}>{title}</h3>
         <div className={styles.price}>
           ${total.toFixed(2)}{" "}
           <span className={styles.itemprice}>(${price.toFixed(2)}/item)</span>
@@ -29,11 +32,15 @@ const CartItem = (props) => {
       </header>
       <div className={styles.details}>
         <div className={styles.quantity}>
-          x <span>{quantity}</span>
+          x <span className={styles.amount}>{quantity}</span>
         </div>
         <div className={styles.actions}>
-          <button onClick={removeItemHandler}>-</button>
-          <button onClick={addItemHandler}>+</button>
+          <button className={styles.button} onClick={removeItemHandler}>
+            -
+          </button>
+          <button className={styles.button} onClick={addItemHandler}>
+            +
+          </button>
         </div>
       </div>
     </li>

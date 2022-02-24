@@ -6,7 +6,7 @@ import Button from "../Button/Button.js";
 function App() {
   return (
     <div className={styles.container}>
-      <Counter />;
+      <Counter />
       <Button />
     </div>
   );

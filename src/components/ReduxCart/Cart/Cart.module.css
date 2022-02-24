@@ -4,12 +4,12 @@
   color: white;
 }
 
-.cart h2 {
+.heading {
   font-size: 1.25rem;
   margin: 0.5rem 0;
 }
 
-.cart ul {
+.list {
   list-style: none;
   padding: 0;
   margin: 0;

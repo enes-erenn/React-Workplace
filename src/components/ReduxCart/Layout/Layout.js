@@ -1,4 +1,6 @@
+// Packages and Dependencies
 import { Fragment } from 'react';
+// Components
 import MainHeader from './MainHeader';
 
 const Layout = (props) => {

@@ -1,4 +1,6 @@
+// Packages and Dependencies
 import { useState } from "react";
+// Styles
 import styles from "../contacts.module.css";
 
 function List({ contacts }) {

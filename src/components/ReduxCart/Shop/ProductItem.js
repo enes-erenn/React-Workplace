@@ -1,8 +1,10 @@
+// Packages and Dependencies
 import { useDispatch, useSelector } from "react-redux";
-
+// Styles
+import styles from "./ProductItem.module.css";
+// Components
 import { cartActions } from "../../../store/ReduxCartSlices/cart-slice.js";
 import Card from "../UI/Card";
-import styles from "./ProductItem.module.css";
 
 const ProductItem = (props) => {
   const cart = useSelector((state) => state.cart);
@@ -55,11 +57,11 @@ const ProductItem = (props) => {
   return (
     <li className={styles.item}>
       <Card>
-        <header>
-          <h3>{title}</h3>
+        <header className={styles.header}>
+          <h3 className={styles.title}>{title}</h3>
           <div className={styles.price}>${price.toFixed(2)}</div>
         </header>
-        <p>{description}</p>
+        <p className={styles.description}>{description}</p>
         <div className={styles.actions}>
           <button className={styles.button} onClick={addToCartHandler}>
             Add to Cart

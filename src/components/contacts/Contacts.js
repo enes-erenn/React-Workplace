@@ -1,7 +1,10 @@
+// Packages and Dependencies
 import { useState } from "react";
+// Styles
+import styles from "./contacts.module.css";
+// Components
 import List from "./List/ContactList";
 import Form from "./Form/ContactForm";
-import styles from "./contacts.module.css";
 import Button from "../Button/Button.js";
 
 export default function Contacts() {

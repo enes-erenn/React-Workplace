@@ -1,9 +1,11 @@
-import React from "react";
+// Packages and Dependencies
+import { Provider } from "react-redux";
+// Styles
+import styles from "./ReduxToDoApp.module.css";
+// Components
 import ToDoInput from "./ToDoForm/ToDoForm.js";
 import ToDoList from "./ToDoList/ToDoList.js";
-import styles from "./ReduxToDoApp.module.css";
 import { store } from "../../store/store.js";
-import { Provider } from "react-redux";
 import Button from "../Button/Button.js";
 
 const ReduxToDoApp = () => {

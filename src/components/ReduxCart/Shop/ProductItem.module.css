@@ -1,9 +1,9 @@
-.item h3 {
+.title {
   margin: 0.5rem 0;
   font-size: 1.25rem;
 }
 
-.item header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -17,7 +17,7 @@
   font-size: 1.5rem;
 }
 
-.item p {
+.description {
   color: #3a3a3a;
 }
 

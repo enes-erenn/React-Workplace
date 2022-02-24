@@ -2,7 +2,6 @@
 import styles from "./Counter.module.css";
 // Dependencies
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
 // Components
 import {
   increment,

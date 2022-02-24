@@ -1,12 +1,14 @@
+// Packages and Dependencies
 import { useState } from "react";
 import { useSelector } from "react-redux";
+// Styles
 import styles from "./NotesList.module.css";
 
 const NotesList = () => {
   const [filter, setFilter] = useState("");
   const items = useSelector((state) => state.notes.items);
   const filtered = useSelector((state) =>
-   items.filter((item) =>
+    items.filter((item) =>
       item.note.toLowerCase().includes(filter.toLowerCase())
     )
   );

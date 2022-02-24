@@ -1,4 +1,6 @@
+// Packages and Dependencies
 import { useState, useEffect } from "react";
+// Styles
 import styles from "../contacts.module.css";
 
 const initialFormValues = { fullName: "", phoneNumber: "" };

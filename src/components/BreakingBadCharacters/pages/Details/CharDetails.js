@@ -1,8 +1,10 @@
+// Packages and Dependencies
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import styles from "./CharDetails.module.css";
 import { Link } from "react-router-dom";
+// Styles
+import styles from "./CharDetails.module.css";
 
 const CharDetails = () => {
   const [char, setChar] = useState();
@@ -39,8 +41,7 @@ const CharDetails = () => {
       {char && (
         <div className={styles.char}>
           <div className={styles.imgContainer}>
-
-          <img className={styles.img} src={char.img} alt="" />
+            <img className={styles.img} src={char.img} alt="" />
           </div>
           <div className={styles.informations}>
             <h1 className={styles.name}>{char.name}</h1>

@@ -1,5 +1,7 @@
-import ProductItem from "./ProductItem";
+// Styles
 import styles from "./Products.module.css";
+// Components
+import ProductItem from "./ProductItem";
 
 const Products = (props) => {
   const DUMMY_PRODUCTS = [
@@ -13,8 +15,8 @@ const Products = (props) => {
 
   return (
     <section className={styles.products}>
-      <h2>Buy your favorite products</h2>
-      <ul>
+      <h2 className={styles.header}>Buy your favorite products</h2>
+      <ul className={styles.list}>
         {DUMMY_PRODUCTS.map((product) => (
           <ProductItem
             key={product.id}

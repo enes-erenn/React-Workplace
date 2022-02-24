@@ -24,6 +24,7 @@
   align-items: center;
   justify-content: space-between;
   list-style: none;
+  padding: 0 3rem;
 }
 .link {
   color: #ffe8d6;
@@ -51,13 +52,13 @@
   margin: 1rem auto;
 }
 
-::-webkit-scrollbar {
+.container::-webkit-scrollbar {
   width: 4px;
 }
-::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track {
   background-color: rgb(255, 255, 255);
 }
 
-::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb {
   background-color: #78787e;
 }

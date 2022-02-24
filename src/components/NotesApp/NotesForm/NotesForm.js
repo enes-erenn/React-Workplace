@@ -1,5 +1,6 @@
-import React from "react";
+// Styles
 import styles from "./NotesForm.module.css";
+// Components
 import { addNote } from "../../../store/ReduxNotes/NotesSlice.js";
 import { useState } from "react";
 import { useDispatch } from "react-redux";

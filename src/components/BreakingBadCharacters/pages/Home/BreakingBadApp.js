@@ -1,8 +1,11 @@
+// Packages and Dependencies
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchCharacters } from "../../../../store/CharactersSlice/CharactersSlice.js";
-import styles from "./BreakingBadApp.module.css";
 import { Link } from "react-router-dom";
+// Styles
+import styles from "./BreakingBadApp.module.css";
+// Components
+import { fetchCharacters } from "../../../../store/CharactersSlice/CharactersSlice.js";
 import Button from "../../../Button/Button.js";
 
 const Home = () => {
