@@ -1,13 +1,65 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import styles from "./SpendMoneyApp.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { buy, sell } from "../../store/SpendMoneySlice/SpendMoneySlice.js";
+import CountUp from "react-countup";
+import { nanoid } from "nanoid";
+import {
+  setLoading,
+  changeAmount,
+} from "../../store/SpendMoneySlice/SpendMoneySlice.js";
 
 const SpendMoneyApp = () => {
   const items = useSelector((state) => state.items.items);
   const budget = useSelector((state) => state.items.budget);
+  const loading = useSelector((state) => state.items.loading);
   const dispatch = useDispatch();
+  const [budgetSnapshot, setBudgetSnapshot] = useState(0);
+  const [total, setTotal] = useState(0);
+  const [amount, setAmount] = useState(items.map((e) => e.amount));
 
+  useEffect(() => {
+    let _total = 0;
+    items.forEach((e) => {
+      _total += parseInt(e.amount) * e.price;
+    });
+    setTotal(_total);
+  }, [items]);
+
+  const changeHandler = (amount, item) => {
+    const _temp = [...amount];
+    const id = item.id;
+    _temp[id - 1] = amount;
+    amount = amount[0] === "0" ? (amount.length > 1 ? amount[1] : 0) : amount;
+    amount =
+      budget < item.price * amount
+        ? amount > item.amount
+          ? String(Math.floor(budget / item.price) + item.amount)
+          : amount
+        : amount;
+    amount = amount === "" ? 0 : amount;
+
+    amount = amount >= 0 ? amount : 0;
+    _temp[id - 1] = amount;
+    amount = parseInt(amount);
+
+    setAmount(_temp);
+    dispatch(changeAmount({ id: id, amount: amount }));
+  };
+
+  const buyHandler = (item) => {
+    const _temp = [...amount];
+    const id = item.id;
+    _temp[id - 1] = item.amount + 1;
+    setAmount(_temp);
+    dispatch(changeAmount({ id: item.id, amount: item.amount + 1 }));
+  };
+  const sellHandler = (item) => {
+    const _temp = [...amount];
+    const id = item.id;
+    _temp[id - 1] = item.amount - 1;
+    setAmount(_temp);
+    dispatch(changeAmount({ id: item.id, amount: item.amount - 1 }));
+  };
   return (
     <div className={styles.container}>
       <div className={styles.app}>
@@ -18,13 +70,21 @@ const SpendMoneyApp = () => {
             alt=""
           />
           <h1 className={styles.heading}>Spend Bill Gates' Money</h1>
-          <p className={styles.money}>{`$${new Intl.NumberFormat(
-            "en-US"
-          ).format(budget)}`}</p>
+          <CountUp
+            className={styles.money}
+            start={budgetSnapshot}
+            end={budget}
+            preserveValue={true}
+            duration={1}
+            separator=","
+            decimals={0}
+            decimal=","
+            prefix="$"
+          />
         </header>
         <div className={styles.items}>
           {items.map((item) => (
-            <div className={styles.item} key={item.price}>
+            <div className={styles.item} key={item.id}>
               <div>
                 <img className={styles.img} src={item.img} alt="" />
                 <h6 className={styles.title}>{item.title}</h6>
@@ -34,21 +94,54 @@ const SpendMoneyApp = () => {
               </div>
               <div className={styles.controls}>
                 <button
-                  className={`${styles.button} ${styles.sell}`}
-                  onClick={() => dispatch(sell(item.price))}
+                  className={
+                    item.amount > 0
+                      ? `${styles.button} ${styles.sell}`
+                      : `${styles.button} } ${styles.disable}`
+                  }
+                  onClick={() => sellHandler(item)}
+                  disabled={loading || item.amount === 0}
                 >
                   Sell
                 </button>
-                <input className={styles.count} type="number"></input>
+                <input
+                  className={styles.count}
+                  type="number"
+                  value={amount[item.id - 1]}
+                  onChange={(e) => changeHandler(e.target.value, item)}
+                  min="0"
+                  disabled={loading}
+                ></input>
                 <button
-                  className={`${styles.button} ${styles.buy}`}
-                  onClick={() => dispatch(buy(item.price))}
+                  className={
+                    budget > item.price
+                      ? `${styles.button} ${styles.buy}`
+                      : `${styles.button} ${styles.disable}`
+                  }
+                  onClick={() => buyHandler(item)}
+                  disabled={loading || budget < item.price}
                 >
                   Buy
                 </button>
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.receipt_container}>
+          <h3 className={styles.receipt_title}>Your Receipt</h3>
+          {items.map((item) => {
+            return item.amount > 0 ? (
+              <div className={styles.receipt} key={nanoid()}>
+                <p>{item.title}</p>
+                <p>{item.amount}</p>{" "}
+                <p>{`$${new Intl.NumberFormat("en-US").format(
+                  item.price * item.amount
+                )}`}</p>
+              </div>
+            ) : (
+              ""
+            );
+          })}
         </div>
       </div>
     </div>

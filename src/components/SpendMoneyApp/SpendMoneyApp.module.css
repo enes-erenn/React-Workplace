@@ -112,6 +112,7 @@
 .count {
   width: 5rem;
   padding: 8px;
+  text-align: center;
 }
 
 .buy {
@@ -160,4 +161,37 @@
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D11616", endColorstr="#8B2C40", GradientType=1 );
+}
+
+.count::-webkit-outer-spin-button,
+.count::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.count[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.disable {
+  background: rgb(175, 168, 168);
+}
+
+.receipt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.receipt_title {
+  text-align: center;
+  color: #252422;
+  padding: 2rem 0;
+}
+
+.receipt_container {
+  padding: 3rem;
 }
