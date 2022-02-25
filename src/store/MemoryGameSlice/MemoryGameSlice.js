@@ -241,14 +241,14 @@ export const MemoryGameSlice = createSlice({
           state.items[state.secondSlot].isLocked = true;
         }
       } else {
-        state.items[state.firstSlot].isLocked !== true
-          ? (state.items[state.firstSlot].isActive =
-              !state.items[state.firstSlot].isActive)
-          : (state.items[state.firstSlot].isActive = true);
-        state.items[state.secondSlot].isLocked !== true
-          ? (state.items[state.secondSlot].isActive =
-              !state.items[state.secondSlot].isActive)
-          : (state.items[state.secondSlot].isActive = true);
+        state.items[state.firstSlot].isLocked === true
+          ? (state.items[state.firstSlot].isActive = true)
+          : (state.items[state.firstSlot].isActive =
+              !state.items[state.firstSlot].isActive);
+        state.items[state.secondSlot].isLocked === true
+          ? (state.items[state.secondSlot].isActive = true)
+          : (state.items[state.secondSlot].isActive =
+              !state.items[state.secondSlot].isActive);
 
         state.slots = 2;
         state.firstSlot = action.payload.id - 1;

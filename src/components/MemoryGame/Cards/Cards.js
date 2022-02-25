@@ -5,9 +5,6 @@ import { useEffect } from "react";
 
 const Cards = () => {
   const cards = useSelector((state) => state.cards.items);
-  const slots = useSelector((state) => state.cards.slots);
-  const firstSlot = useSelector((state) => state.cards.firstSlot);
-  const secondSlot = useSelector((state) => state.cards.secondSlot);
   const dispatch = useDispatch();
 
   return (
@@ -28,7 +25,11 @@ const Cards = () => {
             }
           >
             <div className={styles.front}>?</div>
-            <div className={styles.back}>
+            <div
+              className={
+                card.isLocked ? `${styles.selected} ` : `${styles.back}`
+              }
+            >
               <img className={styles.img} src={card.img} alt="" />
             </div>
           </div>
