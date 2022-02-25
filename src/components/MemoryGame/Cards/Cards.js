@@ -10,15 +10,13 @@ const Cards = () => {
   const secondSlot = useSelector((state) => state.cards.secondSlot);
   const dispatch = useDispatch();
 
-  useEffect(() => {}, [firstSlot, secondSlot]);
-
   return (
     <div className={styles.cards}>
       {cards.map((card) => (
         <div
           key={card.id}
           onClick={() => {
-            dispatch(setState(card.id));
+            dispatch(setState({ id: card.id, title: card.title }));
           }}
           className={styles.card}
         >

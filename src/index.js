@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import { render } from "react-dom";
+import { Navigate } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -21,34 +22,45 @@ import Quotes from "./components/BreakingBadCharacters/pages/Quotes/BreakingBadQ
 import SpendMoney from "./components/SpendMoneyApp/SpendMoneyApp.js";
 import ReduxCart from "./components/ReduxCart/ReduxCartApp.js";
 import MemoryGame from "./components/MemoryGame/MemoryGameApp.js";
+import ReactAuthApp from "./components/ReactAuth/ReactAuthApp.js";
+import UserProfile from "./components/ReactAuth/Profile/UserProfile.js";
+import AuthPage from ".//components/ReactAuth/pages/AuthPage.js";
+import { AuthContextProvider } from "./store/Auth/auth-context";
 
 render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<App />} />
-        <Route path="contacts" element={<Contacts />} />
-        <Route path="expensesapp" element={<ExpensesApp />} />
-        <Route path="weatherapp" element={<WeatherApp />} />
-        <Route path="adduserapp" element={<AddUserApp />} />
-        <Route path="adduserapp" element={<AddUserApp />} />
-        <Route path="mymealsapp" element={<MyMealsApp />} />
-        <Route path="formapp" element={<FormApp />} />
-        <Route path="reduxcounter" element={<ReduxCounterApp />} />
-        <Route path="reduxtodo" element={<ReduxToDo />} />
-        <Route path="reduxnotes" element={<ReduxNotes />} />
-        <Route path="spendmoney" element={<SpendMoney />} />
-        <Route path="reduxcart" element={<ReduxCart />} />
-        <Route path="memorygame" element={<MemoryGame />} />
-        <Route
-          path="breakingbadcharacters"
-          element={<BreakingBadCharacters />}
-        />
-        <Route path="/char/:char_id" element={<Detail />} />
-        <Route path="/breakingbadcharacters/quotes" element={<Quotes />} />
-      </Routes>
-    </BrowserRouter>
-  </Provider>,
+  <AuthContextProvider>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<App />} />
+          <Route path="contacts" element={<Contacts />} />
+          <Route path="expensesapp" element={<ExpensesApp />} />
+          <Route path="weatherapp" element={<WeatherApp />} />
+          <Route path="adduserapp" element={<AddUserApp />} />
+          <Route path="adduserapp" element={<AddUserApp />} />
+          <Route path="mymealsapp" element={<MyMealsApp />} />
+          <Route path="formapp" element={<FormApp />} />
+          <Route path="reduxcounter" element={<ReduxCounterApp />} />
+          <Route path="reduxtodo" element={<ReduxToDo />} />
+          <Route path="reduxnotes" element={<ReduxNotes />} />
+          <Route path="spendmoney" element={<SpendMoney />} />
+          <Route path="reduxcart" element={<ReduxCart />} />
+          <Route path="memorygame" element={<MemoryGame />} />
+          <Route path="reactauth" element={<ReactAuthApp />} />
+          <Route path="/reactauth/auth" element={<AuthPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/reactauth/profile" element={<UserProfile />} />
+
+          <Route
+            path="breakingbadcharacters"
+            element={<BreakingBadCharacters />}
+          />
+          <Route path="/char/:char_id" element={<Detail />} />
+          <Route path="/breakingbadcharacters/quotes" element={<Quotes />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
+  </AuthContextProvider>,
   document.getElementById("root")
 );
 

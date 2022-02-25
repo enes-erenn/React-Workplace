@@ -63,3 +63,13 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
 }
+
+.selected {
+  background: gray;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
