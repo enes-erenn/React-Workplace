@@ -169,10 +169,10 @@ function App() {
         <article className={styles.pages}>
           <Link to="spendmoney">
             <div className={styles.works}>
-              <h3 className={styles.headers}>Spend Money</h3>
+              <h3 className={styles.headers}>Spend Money App</h3>
               <img
                 class={styles.imgs}
-                src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/SpendMoneyApp/SpendMoneyApp.png"
                 alt=""
               />
             </div>
@@ -185,7 +185,7 @@ function App() {
               <h3 className={styles.headers}>ReduxCart</h3>
               <img
                 class={styles.imgs}
-                src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReduxCart/ReduxCart.png"
                 alt=""
               />
             </div>
@@ -193,12 +193,12 @@ function App() {
         </article>
 
         <article className={styles.pages}>
-          <Link to="memorygame" >
+          <Link to="memorygame">
             <div className={styles.works}>
               <h3 className={styles.headers}>Memory Game</h3>
               <img
                 class={styles.imgs}
-                src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/MemoryGame/MemoryGame.png"
                 alt=""
               />
             </div>
@@ -206,12 +206,12 @@ function App() {
         </article>
 
         <article className={styles.pages}>
-          <Link to="reactauth" >
+          <Link to="reactauth">
             <div className={styles.works}>
-              <h3 className={styles.headers}>ReactAuth App</h3>
+              <h3 className={styles.headers}>React Auth App</h3>
               <img
                 class={styles.imgs}
-                src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReactAuth/ReactAuth.png"
                 alt=""
               />
             </div>

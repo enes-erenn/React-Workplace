@@ -1,29 +1,21 @@
-import { useState, useEffect } from "react";
-import styles from "./SpendMoneyApp.module.css";
+// Packages and Dependencies
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import CountUp from "react-countup";
 import { nanoid } from "nanoid";
-import {
-  setLoading,
-  changeAmount,
-} from "../../store/SpendMoneySlice/SpendMoneySlice.js";
+// Styles
+import styles from "./SpendMoneyApp.module.css";
+// Components
+import { changeAmount } from "../../store/SpendMoneySlice/SpendMoneySlice.js";
+import Button from "../Button/Button.js";
 
 const SpendMoneyApp = () => {
   const items = useSelector((state) => state.items.items);
   const budget = useSelector((state) => state.items.budget);
   const loading = useSelector((state) => state.items.loading);
   const dispatch = useDispatch();
-  const [budgetSnapshot, setBudgetSnapshot] = useState(0);
-  const [total, setTotal] = useState(0);
+  const budgetSnapshot = 0;
   const [amount, setAmount] = useState(items.map((e) => e.amount));
-
-  useEffect(() => {
-    let _total = 0;
-    items.forEach((e) => {
-      _total += parseInt(e.amount) * e.price;
-    });
-    setTotal(_total);
-  }, [items]);
 
   const changeHandler = (amount, item) => {
     const _temp = [...amount];
@@ -62,6 +54,7 @@ const SpendMoneyApp = () => {
   };
   return (
     <div className={styles.container}>
+      <Button />
       <div className={styles.app}>
         <header className={styles.header}>
           <img

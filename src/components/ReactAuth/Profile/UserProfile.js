@@ -1,5 +1,7 @@
-import ProfileForm from "./ProfileForm";
+// Styles
 import styles from "./UserProfile.module.css";
+// Components
+import ProfileForm from "./ProfileForm";
 import Layout from "../Layout/Layout.js";
 
 const UserProfile = () => {

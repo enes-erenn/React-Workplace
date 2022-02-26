@@ -6,11 +6,11 @@ import Cart from ".//Cart/Cart";
 import Layout from ".//Layout/Layout";
 import Products from ".//Shop/Products";
 import Notification from "./UI/Notification.js";
+import Button from "../Button/Button.js";
 import {
   sendCartData,
   fetchCartData,
 } from "../../store/ReduxCartSlices/cart-actions.js";
-
 let isInitial = true;
 
 function App() {
@@ -34,6 +34,7 @@ function App() {
 
   return (
     <>
+      <Button />
       {notification && (
         <Notification
           status={notification.status}

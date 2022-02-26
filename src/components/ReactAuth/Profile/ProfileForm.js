@@ -1,7 +1,10 @@
-import styles from "./ProfileForm.module.css";
+// Packages and Dependencies
 import { useRef, useContext } from "react";
-import AuthContext from "../../../store/Auth/auth-context.js";
 import { useNavigate } from "react-router-dom";
+// Styles
+import styles from "./ProfileForm.module.css";
+// Components
+import AuthContext from "../../../store/Auth/auth-context.js";
 
 const ProfileForm = () => {
   const newPasswordInputRef = useRef();

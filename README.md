@@ -12,8 +12,12 @@ Welcome to the my "React Workplace". In this repository, you'll find some apps t
 - To Do App
 - Notes App
 - Breaking Bad App
+- SpendMoney App
+- ReduxCart
+- Memory Game
+- ReactAuth App
 
-It is enough to run this "react app" to reach all of the apps upper.
+  It is enough to run this "react app" to reach all of the apps upper.
 
 ## Available Scripts
 
@@ -70,3 +74,19 @@ You may also see any lint errors in the console.
   <h4 align="center">Breaking Bad App</h4>
 
 <img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/BreakingBadApp/BreakingBadApp.png">
+
+  <h4 align="center">Spend Money App</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/SpendMoneyApp/SpendMoneyApp.png">
+
+  <h4 align="center">Redux Cart App</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReduxCart/ReduxCart.png">
+
+  <h4 align="center">React Auth App</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/ReactAuth/ReactAuth.png">
+
+  <h4 align="center">Memory Game</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/MemoryGame/MemoryGame.png">

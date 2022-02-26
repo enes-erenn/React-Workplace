@@ -1,3 +1,4 @@
+// Styles
 import styles from "./StartingPageContent.module.css";
 
 const StartingPageContent = () => {

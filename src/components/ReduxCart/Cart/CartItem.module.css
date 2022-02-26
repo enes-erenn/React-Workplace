@@ -48,6 +48,7 @@
   border: 1px solid white;
   margin-left: 0.5rem;
   padding: 0.15rem 1rem;
+  cursor: pointer;
   color: white;
 }
 
