@@ -73,3 +73,24 @@
   justify-content: center;
   padding: 1rem;
 }
+
+.points {
+  text-align: center;
+  margin: 5% 0;
+  font-size: 2rem;
+  color: #d62828;
+}
+
+.win {
+  width: 7rem;
+  background-color: #fb5607;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  border-radius: 10px;
+  height: 3rem;
+  border: none;
+  margin: 3% auto;
+  cursor: pointer;
+}
