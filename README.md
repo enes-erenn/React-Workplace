@@ -17,6 +17,8 @@ Welcome to the my "React Workplace". In this repository, you'll find some apps t
 - Memory Game
 - ReactAuth App
 - Text Generator
+- Markdown Previewer
+- Covid-19 Tracker
 
   It is enough to run this "react app" to reach all of the apps upper.
 
@@ -99,3 +101,7 @@ You may also see any lint errors in the console.
   <h4 align="center">Markdown Previewer</h4>
 
 <img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/MarkdownPreviewer/MarkdownPreviewer.png">
+
+  <h4 align="center">Covid-19 Tracker</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/Covid19Tracker/Covid19Tracker.png">

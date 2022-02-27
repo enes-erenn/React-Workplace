@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+.app {
+  width: 100%;
+  height: auto;
+  font-family: "Hubballi", sans-serif;
+  background: #2a9d8f;
+  color: #ffe8d6;
+  padding: 4% 0;
+  font-size: 1.6rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aside {
+  margin: 2% 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #264653;
+}
+
+.totals {
+  padding: 1% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}

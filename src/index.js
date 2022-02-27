@@ -28,6 +28,7 @@ import AuthPage from "./components/ReactAuth/pages/AuthPage.js";
 import { AuthContextProvider } from "./store/Auth/auth-context";
 import TextGeneratorApp from "./components/TextGeneratorApp/TextGeneratorApp.js";
 import MarkdownPreviewer from "./components/MarkdownPreviewer/MarkdownPreviewer.js";
+import Covid19Tracker from "./components/Covid19Tracker/Covid19Tracker.js";
 
 render(
   <AuthContextProvider>
@@ -54,6 +55,7 @@ render(
           <Route path="/reactauth/profile" element={<UserProfile />} />
           <Route path="/textgenerator" element={<TextGeneratorApp />} />
           <Route path="/markdownpreviewer" element={<MarkdownPreviewer />} />
+          <Route path="/covid19tracker" element={<Covid19Tracker />} />
 
           <Route
             path="breakingbadcharacters"

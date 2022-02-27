@@ -1,0 +1,14 @@
+.country {
+  background: #1d3557;
+  padding: 10px;
+  font-size: 1rem;
+  width: 12rem;
+  height: 6rem;
+}
+
+.container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
