@@ -27,6 +27,7 @@ import UserProfile from "./components/ReactAuth/Profile/UserProfile.js";
 import AuthPage from "./components/ReactAuth/pages/AuthPage.js";
 import { AuthContextProvider } from "./store/Auth/auth-context";
 import TextGeneratorApp from "./components/TextGeneratorApp/TextGeneratorApp.js";
+import MarkdownPreviewer from "./components/MarkdownPreviewer/MarkdownPreviewer.js";
 
 render(
   <AuthContextProvider>
@@ -52,6 +53,7 @@ render(
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/reactauth/profile" element={<UserProfile />} />
           <Route path="/textgenerator" element={<TextGeneratorApp />} />
+          <Route path="/markdownpreviewer" element={<MarkdownPreviewer />} />
 
           <Route
             path="breakingbadcharacters"

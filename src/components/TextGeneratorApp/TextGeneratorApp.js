@@ -1,6 +1,10 @@
-import styles from "./TextGeneratorApp.module.css";
+// Packages and Dependencies
 import { useState, useEffect } from "react";
 import axios from "axios";
+// Styles
+import styles from "./TextGeneratorApp.module.css";
+// Components
+import Button from "../Button/Button.js";
 
 const TextGeneratorApp = () => {
   const [value, setValue] = useState(10);
@@ -37,6 +41,7 @@ const TextGeneratorApp = () => {
   };
   return (
     <div className={styles.app}>
+      <Button />
       <header>
         <h1 className={styles.heading}>React Text Generator</h1>
       </header>
