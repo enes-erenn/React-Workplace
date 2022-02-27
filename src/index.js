@@ -24,8 +24,9 @@ import ReduxCart from "./components/ReduxCart/ReduxCartApp.js";
 import MemoryGame from "./components/MemoryGame/MemoryGameApp.js";
 import ReactAuthApp from "./components/ReactAuth/ReactAuthApp.js";
 import UserProfile from "./components/ReactAuth/Profile/UserProfile.js";
-import AuthPage from ".//components/ReactAuth/pages/AuthPage.js";
+import AuthPage from "./components/ReactAuth/pages/AuthPage.js";
 import { AuthContextProvider } from "./store/Auth/auth-context";
+import TextGeneratorApp from "./components/TextGeneratorApp/TextGeneratorApp.js";
 
 render(
   <AuthContextProvider>
@@ -50,6 +51,7 @@ render(
           <Route path="/reactauth/auth" element={<AuthPage />} />
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/reactauth/profile" element={<UserProfile />} />
+          <Route path="/textgenerator" element={<TextGeneratorApp />} />
 
           <Route
             path="breakingbadcharacters"

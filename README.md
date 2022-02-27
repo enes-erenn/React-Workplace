@@ -16,6 +16,7 @@ Welcome to the my "React Workplace". In this repository, you'll find some apps t
 - ReduxCart
 - Memory Game
 - ReactAuth App
+- Text Generator
 
   It is enough to run this "react app" to reach all of the apps upper.
 
@@ -90,3 +91,7 @@ You may also see any lint errors in the console.
   <h4 align="center">Memory Game</h4>
 
 <img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/MemoryGame/MemoryGame.png">
+
+  <h4 align="center">Text Generator</h4>
+
+<img src="https://raw.githubusercontent.com/thenesern/React-Workplace/master/src/components/Assets/Images/TextGenerator/TextGenerator.png">
